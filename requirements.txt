@@ -15,3 +15,7 @@ datasets
 tiktoken
 wandb
 tqdm
+google-genai
+langchain-community
+duckduckgo-search
+langchain_openai

@@ -6,20 +6,14 @@ import sys
 from subprocess import TimeoutExpired
 
 MAX_ITERS = 4
-MAX_RUNS = 5
 MAX_STDERR_OUTPUT = 1500
 
-coder_prompt = """Your goal is to implement the following idea: {title}.
-The proposed experiment is as follows: {idea}.
-You are given a total of up to {max_runs} runs to complete the necessary experiments. You do not need to use all {max_runs}.
-
-First, plan the list of experiments you would like to run. For example, if you are sweeping over a specific hyperparameter, plan each value you would like to test for each run.
-
-Note that we already provide the vanilla baseline results, so you do not need to re-run it.
-
-For reference, the baseline results are as follows:
-
-{baseline_results}
+coder_prompt = """Your goal is to implement and test the following MVP: {title}.
+Problem: {problem}
+Solution: {solution}
+MVP: {mvp}
+Target: {target}
+You are given a total of up to {max_runs} runs to complete the necessary experiments. You do not need to use all {max_runs}. After every run, you will recieve the results written in results.txt.
 
 After you complete each change, we will run the command `python experiment.py --out_dir=run_i' where i is the run number and evaluate the results.
 YOUR PROPOSED CHANGE MUST USE THIS COMMAND FORMAT, DO NOT ADD ADDITIONAL COMMAND LINE ARGS.
@@ -27,7 +21,7 @@ You can then implement the next thing on your list."""
 
 
 # RUN EXPERIMENT
-def run_experiment(folder_name, run_num, timeout=7200):
+def run_experiment(folder_name, run_num, max_runs, timeout=7200):
     cwd = osp.abspath(folder_name)
     # COPY CODE SO WE CAN SEE IT.
     shutil.copy(
@@ -59,22 +53,42 @@ def run_experiment(folder_name, run_num, timeout=7200):
                 stderr_output = "..." + stderr_output[-MAX_STDERR_OUTPUT:]
             next_prompt = f"Run failed with the following error {stderr_output}"
         else:
-            with open(osp.join(cwd, f"run_{run_num}", "final_info.json"), "r") as f:
-                results = json.load(f)
-            results = {k: v["means"] for k, v in results.items()}
+            with open(osp.join(cwd, f"run_{run_num}", "results.txt"), "r") as f:
+                results = f.read()
 
             next_prompt = f"""Run {run_num} completed. Here are the results:
+
+Samples of the surveys:
 {results}
 
-Decide if you need to re-plan your experiments given the result (you often will not need to).
+Decide if you need to re-plan your experiments given the result (you often will not need to). Remember the ultimate goal is to validate the MVP.
 
 Someone else will be using `notes.txt` to perform a writeup on this in the future.
-Please include *all* relevant information for the writeup on Run {run_num}, including an experiment description and the run number. Be as verbose as necessary.
+Please include *all* relevant information for the writeup on Run {run_num}, including an run number, description and obervation. Be as verbose as necessary.
+You must include all of the survey results, just copy the exact results. Additionally, include some important exerpts from the app usage logs in the following format, do not include user thoughts.
 
+Log 1
+INSIGHTS: <INSIGHTS>
+USER INPUT: <USER INPUT>
+APP OUTPUT: <APP OUTPUT>
+continue...
+
+Log 2
+INSIGHTS: <INSIGHTS>
+USER INPUT: <USER INPUT>
+APP OUTPUT: <APP OUTPUT>
+continue...
+
+Do not delete/replace anything that is already in the `notes.txt` file.
+"""
+        if run_num == max_runs:
+            next_prompt += "\nYou have finished all experiments. You cannot propose any more changes."
+        else:
+            next_prompt += f"""\nYou have {max_runs - run_num} more experiments you can use. You do not need to use all runs.
 Then, implement the next thing on your list.
 We will then run the command `python experiment.py --out_dir=run_{run_num + 1}'.
 YOUR PROPOSED CHANGE MUST USE THIS COMMAND FORMAT, DO NOT ADD ADDITIONAL COMMAND LINE ARGS.
-If you are finished with experiments, respond with 'ALL_COMPLETED'."""
+If you are finished with experiments, respond with 'ALL_COMPLETED'.""" 
         return result.returncode, next_prompt
     except TimeoutExpired:
         print(f"Run {run_num} timed out after {timeout} seconds")
@@ -113,17 +127,19 @@ def run_plotting(folder_name, timeout=600):
 
 
 # PERFORM EXPERIMENTS
-def perform_experiments(idea, folder_name, coder, baseline_results) -> bool:
+def perform_experiments(idea, folder_name, coder, max_runs=2) -> bool:
     ## RUN EXPERIMENT
     current_iter = 0
     run = 1
     next_prompt = coder_prompt.format(
         title=idea["Title"],
-        idea=idea["Experiment"],
-        max_runs=MAX_RUNS,
-        baseline_results=baseline_results,
+        problem=idea["Problem"],
+        solution=idea["Solution"],
+        mvp=idea["MVP"],
+        target=idea["Target"],
+        max_runs=max_runs,
     )
-    while run < MAX_RUNS + 1:
+    while run <= max_runs:
         if current_iter >= MAX_ITERS:
             print("Max iterations reached")
             break
@@ -131,7 +147,7 @@ def perform_experiments(idea, folder_name, coder, baseline_results) -> bool:
         print(coder_out)
         if "ALL_COMPLETED" in coder_out:
             break
-        return_code, next_prompt = run_experiment(folder_name, run)
+        return_code, next_prompt = run_experiment(folder_name, run, max_runs)
         if return_code == 0:
             run += 1
             current_iter = 0
@@ -139,12 +155,12 @@ def perform_experiments(idea, folder_name, coder, baseline_results) -> bool:
     if current_iter >= MAX_ITERS:
         print("Not all experiments completed.")
         return False
-
+    coder_out = coder.run(next_prompt) # write final run result to notes.txt
     current_iter = 0
     next_prompt = """
 Great job! Please modify `plot.py` to generate the most relevant plots for the final writeup. 
 
-In particular, be sure to fill in the "labels" dictionary with the correct names for each run that you want to plot.
+In particular, be sure to fill in the "plots" dictionary with the correct names for each run that you want to plot.
 
 Only the runs in the `labels` dictionary will be plotted, so make sure to include all relevant runs.
 

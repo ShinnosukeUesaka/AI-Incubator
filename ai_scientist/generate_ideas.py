@@ -2,12 +2,17 @@ import json
 import os
 import os.path as osp
 import time
-from typing import List, Dict, Union
+from typing import Dict, List, Union
 
 import backoff
 import requests
 
-from ai_scientist.llm import get_response_from_llm, extract_json_between_markers, create_client, AVAILABLE_LLMS
+from ai_scientist.llm import (
+    AVAILABLE_LLMS,
+    create_client,
+    extract_json_between_markers,
+    get_response_from_llm,
+)
 
 S2_API_KEY = os.getenv("S2_API_KEY")
 
@@ -22,9 +27,8 @@ Here are the ideas that you have already generated:
 {prev_ideas_string}
 '''
 
-Come up with the next impactful and creative idea for research experiments and directions you can feasibly investigate with the code provided.
-Note that you will not have access to any additional resources or datasets.
-Make sure any idea is not overfit the specific training dataset or model, and has wider significance.
+Come up with the next impactful and creative idea you can feasibly investigate with the code provided.
+Note that you will not have access to any additional resources.
 
 Respond in the following format:
 
@@ -36,13 +40,16 @@ NEW IDEA JSON:
 <JSON>
 ```
 
-In <THOUGHT>, first briefly discuss your intuitions and motivations for the idea. Detail your high-level plan, necessary design choices and ideal outcomes of the experiments. Justify how the idea is different from the existing ones.
+In <THOUGHT>, first briefly discuss your intuitions and motivations for the idea. Detail your high-level plan, necessary design choices of the app and ideal outcomes of the survey. Justify how the idea is different from the existing ones.
 
 In <JSON>, provide the new idea in JSON format with the following fields:
 - "Name": A shortened descriptor of the idea. Lowercase, no spaces, underscores allowed.
 - "Title": A title for the idea, will be used for the report writing.
-- "Experiment": An outline of the implementation. E.g. which functions need to be added or modified, how results will be obtained, ...
-- "Interestingness": A rating from 1 to 10 (lowest to highest).
+- "Problem": A clear statement of the problem the app is solving.
+- "Solution": A brief overview of how the app addresses the problem.
+- "Target": A description of the target market or audience for the app.
+- "MVP": A description of the features of the MVP and how you will conduct to validate the idea within the framework of the code provided. This can include testing multiple variations of the appand comparing the survey results. Make sure this is detailed and scientific. Also write hypotheses for the survey.
+- "Scalability": A rating from 1 to 10 (lowest to highest).
 - "Feasibility": A rating from 1 to 10 (lowest to highest).
 - "Novelty": A rating from 1 to 10 (lowest to highest).
 
@@ -160,6 +167,8 @@ def generate_ideas(
 
             idea_str_archive.append(json.dumps(json_output))
         except Exception as e:
+            from traceback import print_exc
+            print_exc()
             print(f"Failed to generate idea: {e}")
             continue
 
@@ -189,7 +198,7 @@ def generate_next_idea(
     print(f"Generating idea {original_archive_size + 1}")
 
     if len(prev_idea_archive) == 0:
-        print(f"First iteration, taking seed ideas")
+        print("First iteration, taking seed ideas")
         # seed the archive on the first run with pre-existing ideas
         with open(osp.join(base_dir, "seed_ideas.json"), "r") as f:
             seed_ideas = json.load(f)
@@ -219,8 +228,8 @@ def generate_next_idea(
                         num_reflections=num_reflections,
                     )
                     + """
-Completed ideas have an additional "Score" field which indicates the assessment by an expert ML reviewer.
-This is on a standard 1-10 ML conference scale.
+Completed ideas have an additional "Score" field which indicates the assessment by an expert Startup advisor.
+This is on a standard 1-10 scale.
 Scores of 0 indicate the idea failed either during experimentation, writeup or reviewing.
 """,
                     client=client,
@@ -448,7 +457,8 @@ def check_idea_novelty(
 
 
 if __name__ == "__main__":
-    MAX_NUM_GENERATIONS = 32
+    #MAX_NUM_GENERATIONS = 32
+    MAX_NUM_GENERATIONS = 4
     NUM_REFLECTIONS = 5
     import argparse
 
