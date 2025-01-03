@@ -5,22 +5,25 @@ import re
 import anthropic
 import backoff
 import openai
+from google import genai
 
 MAX_NUM_TOKENS = 4096
 
 AVAILABLE_LLMS = [
     "claude-3-5-sonnet-20240620",
-    "claude-3-5-sonnet-20241022",
+    "claude-3-5-sonnet-20241022", 
     "gpt-4o-mini-2024-07-18",
+    "chatgpt-4o-latest",
     "gpt-4o-2024-05-13",
     "gpt-4o-2024-08-06",
     "o1-preview-2024-09-12",
     "o1-mini-2024-09-12",
     "deepseek-coder-v2-0724",
+    "deepseek-chat",
     "llama3.1-405b",
     # Anthropic Claude models via Amazon Bedrock
     "bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
-    "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
+    "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0", 
     "bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0",
     "bedrock/anthropic.claude-3-haiku-20240307-v1:0",
     "bedrock/anthropic.claude-3-opus-20240229-v1:0",
@@ -30,6 +33,11 @@ AVAILABLE_LLMS = [
     "vertex_ai/claude-3-5-sonnet-v2@20241022",
     "vertex_ai/claude-3-sonnet@20240229",
     "vertex_ai/claude-3-haiku@20240307",
+    # Google Gemini models
+    "gemini-2.0-flash-exp",
+    "gemini-1.5-flash-8b",
+    "gemini-1.5-flash-002",
+    "gemini-1.5-pro-002"
 ]
 
 
@@ -52,6 +60,8 @@ def get_batch_responses_from_llm(
         "gpt-4o-2024-05-13",
         "gpt-4o-mini-2024-07-18",
         "gpt-4o-2024-08-06",
+        "chatgpt-4o-latest",
+        "deepseek-chat"
     ]:
         new_msg_history = msg_history + [{"role": "user", "content": msg}]
         response = client.chat.completions.create(
@@ -63,7 +73,6 @@ def get_batch_responses_from_llm(
             temperature=temperature,
             max_tokens=MAX_NUM_TOKENS,
             n=n_responses,
-            stop=None,
             seed=0,
         )
         content = [r.message.content for r in response.choices]
@@ -81,7 +90,6 @@ def get_batch_responses_from_llm(
             temperature=temperature,
             max_tokens=MAX_NUM_TOKENS,
             n=n_responses,
-            stop=None,
         )
         content = [r.message.content for r in response.choices]
         new_msg_history = [
@@ -103,6 +111,22 @@ def get_batch_responses_from_llm(
         content = [r.message.content for r in response.choices]
         new_msg_history = [
             new_msg_history + [{"role": "assistant", "content": c}] for c in content
+        ]
+    elif model.startswith("gemini"):
+        new_msg_history = msg_history + [genai.types.Content(role="user", parts=[{"text": msg}])]
+        response = client.models.generate_content(
+            model=model,
+            contents=new_msg_history,
+            config=genai.types.GenerateContentConfig(
+                system_instruction=system_message,
+                temperature=temperature,
+                max_output_tokens=MAX_NUM_TOKENS,
+                candidate_count=n_responses,
+            )
+        )
+        content = [r.text for r in response.candidates]
+        new_msg_history = [
+            new_msg_history + [genai.types.Content(role="model", parts=[{"text": c}])] for c in content
         ]
     else:
         content, new_msg_history = [], []
@@ -180,6 +204,8 @@ def get_response_from_llm(
         "gpt-4o-2024-05-13",
         "gpt-4o-mini-2024-07-18",
         "gpt-4o-2024-08-06",
+        "chatgpt-4o-latest",
+        "deepseek-chat"
     ]:
         new_msg_history = msg_history + [{"role": "user", "content": msg}]
         response = client.chat.completions.create(
@@ -191,7 +217,6 @@ def get_response_from_llm(
             temperature=temperature,
             max_tokens=MAX_NUM_TOKENS,
             n=1,
-            stop=None,
             seed=0,
         )
         content = response.choices[0].message.content
@@ -242,6 +267,19 @@ def get_response_from_llm(
         )
         content = response.choices[0].message.content
         new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
+    elif model.startswith("gemini"):
+        new_msg_history = msg_history + [genai.types.Content(role="user", parts=[{"text": msg}])]
+        response = client.models.generate_content(
+            model=model,
+            contents=new_msg_history,
+            config=genai.types.GenerateContentConfig(
+                system_instruction=system_message,
+                temperature=temperature,
+                max_output_tokens=MAX_NUM_TOKENS,
+            )
+        )
+        content = response.text
+        new_msg_history = new_msg_history + [genai.types.Content(role="model", parts=[{"text": content}])]
     else:
         raise ValueError(f"Model {model} not supported.")
 
@@ -303,7 +341,7 @@ def create_client(model):
     elif model in ["o1-preview-2024-09-12", "o1-mini-2024-09-12"]:
         print(f"Using OpenAI API with model {model}.")
         return openai.OpenAI(), model
-    elif model == "deepseek-coder-v2-0724":
+    elif model in ["deepseek-coder-v2-0724", "deepseek-chat"]:
         print(f"Using OpenAI API with {model}.")
         return openai.OpenAI(
             api_key=os.environ["DEEPSEEK_API_KEY"],
@@ -315,5 +353,8 @@ def create_client(model):
             api_key=os.environ["OPENROUTER_API_KEY"],
             base_url="https://openrouter.ai/api/v1"
         ), "meta-llama/llama-3.1-405b-instruct"
+    elif model.startswith("gemini"):
+        print(f"Using Google GenAI API with model {model}.")
+        return genai.Client(api_key=os.environ["GOOGLE_API_KEY"]), model
     else:
         raise ValueError(f"Model {model} not supported.")
