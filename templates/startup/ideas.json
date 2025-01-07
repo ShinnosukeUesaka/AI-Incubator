@@ -1,0 +1,68 @@
+[
+    {
+        "Name": "task_manager",
+        "Title": "Minimalist Task Manager with Priority Levels",
+        "Problem": "Many task management apps are overly complex and distracting, making it difficult for users to focus on their tasks.",
+        "Solution": "A text-based task manager that allows users to add, complete, and track tasks using simple commands, with the added ability to prioritize tasks as high, medium, or low priority.",
+        "Target": "Tech-savvy individuals aged 25-35, who prefer minimalistic and efficient tools over feature-heavy apps.",
+        "MVP": "The MVP will include basic commands such as 'add [task] [priority]', 'complete [task]', and 'list'. The app will store tasks in a simple list and display them with their priority levels when requested. The survey will include questions about the ease of use, effectiveness in managing tasks, usefulness of priority levels, and overall satisfaction with the app. Hypotheses include: 1) Users will find the app easy to use. 2) Users will prefer this minimalist approach over more complex task management tools. 3) Users will find the priority levels helpful in organizing their tasks. 4) Users will report increased productivity when using the app.",
+        "Scalability": 7,
+        "Feasibility": 9,
+        "Novelty": 7
+    },
+    {
+        "Name": "habit_tracker",
+        "Title": "Minimalist Habit Tracker with Milestone-Based Gamification",
+        "Problem": "Existing habit-tracking apps are either too complex or lack motivational elements, making it difficult for users to stay consistent with their habits.",
+        "Solution": "A text-based habit tracker that allows users to add and track habits with simple commands, while incorporating milestone-based gamification (e.g., streaks, levels, and rewards) to encourage consistency.",
+        "Target": "Tech-savvy individuals aged 25-35, interested in self-improvement and minimalistic tools.",
+        "MVP": "The MVP will include basic commands such as 'add [habit]', 'track [habit]', and 'stats' to view progress. The app will store habits, track streaks, and display milestones (e.g., 'Level 1: 7-day streak'). The survey will include questions about ease of use, effectiveness of gamification, and overall satisfaction with the app. Hypotheses include: 1) Users will find the app intuitive and easy to use. 2) Milestone-based gamification will increase user engagement. 3) Users will report improved habit consistency when using the app. 4) Users will find the milestone system motivating.",
+        "Scalability": 8,
+        "Feasibility": 9,
+        "Novelty": 8
+    },
+    {
+        "Name": "mood_journal",
+        "Title": "Minimalist Journaling App with Mood Tracking",
+        "Problem": "Many people struggle to maintain a consistent journaling habit due to the perceived effort and lack of structure in traditional journaling apps. Additionally, mood tracking is often an afterthought or requires a separate app, which can be cumbersome.",
+        "Solution": "A text-based journaling app that allows users to log daily entries and track their mood with simple commands, combining journaling and mood tracking in one minimalist interface. The app also provides a basic visualization of mood trends over time.",
+        "Target": "Tech-savvy individuals aged 25-35, interested in self-improvement, emotional well-being, and minimalistic tools.",
+        "MVP": "The MVP will include basic commands such as 'log [entry]' to add a journal entry and 'mood [emotion]' to log the user's current mood. The app will store entries and moods in a simple list and display them when requested. A basic visualization of mood trends over time will be included. The survey will include questions about the ease of use, effectiveness in encouraging journaling, usefulness of mood tracking, and satisfaction with the mood trend visualization. Hypotheses include: 1) Users will find the app easy to use. 2) Users will prefer this minimalist approach over more complex journaling tools. 3) Users will find the mood tracking feature helpful in understanding their emotional well-being. 4) Users will find the mood trend visualization insightful. 5) Users will report increased self-awareness when using the app.",
+        "Scalability": 7,
+        "Feasibility": 9,
+        "Novelty": 8
+    },
+    {
+        "Name": "team_task_manager",
+        "Title": "Minimalist Team Task Manager with Real-Time Collaboration",
+        "Problem": "Teams, especially small teams or startups, struggle with coordinating tasks and maintaining transparency in their workflows, particularly in remote or hybrid work environments. Existing tools are either too complex or lack real-time updates, making it difficult to stay aligned.",
+        "Solution": "A text-based team task manager that allows users to assign tasks to team members, track progress, and provide updates using simple commands. The app includes a 'notify' feature to send real-time updates to all team members when a task is assigned or updated, ensuring everyone stays informed and aligned.",
+        "Target": "Tech-savvy professionals aged 25-35, working in small teams or startups, who prefer minimalistic and efficient tools over feature-heavy apps.",
+        "MVP": "The MVP will include basic commands such as 'assign [task] to [user]', 'update [task]', 'status' to view the progress of all tasks, and 'notify' to send real-time updates to all team members. The app will store tasks and their statuses in a simple list and display them when requested. The survey will include questions about ease of use, effectiveness in improving team coordination, usefulness of real-time updates, and overall satisfaction with the app. Hypotheses include: 1) Users will find the app intuitive and easy to use. 2) Users will report improved team coordination when using the app. 3) Users will find the real-time updates feature helpful in staying informed. 4) Users will prefer this minimalist approach over more complex team management tools.",
+        "Scalability": 8,
+        "Feasibility": 9,
+        "Novelty": 8
+    },
+    {
+        "Name": "decision_assistant",
+        "Title": "Minimalist Decision-Making Assistant with Structured Evaluation",
+        "Problem": "Decision fatigue is a common issue among tech-savvy individuals, who often feel overwhelmed by the number of choices they need to make daily. Existing tools either lack structure or are too complex, making it difficult to evaluate options systematically.",
+        "Solution": "A text-based decision-making assistant that guides users through a structured process to evaluate options. Users can list options, assign weights to criteria, and score each option to make informed decisions. The app provides a clear, step-by-step interface to reduce decision fatigue and improve decision quality.",
+        "Target": "Tech-savvy individuals aged 25-35, who frequently face decision-making challenges in both personal and professional contexts and prefer minimalistic, efficient tools.",
+        "MVP": "The MVP will include basic commands such as 'add [option]', 'criteria [criterion] [weight]', 'score [option] [criterion] [score]', and 'decide' to generate a ranked list of options based on the weighted scores. The app will store options, criteria, and scores in a simple list and display the ranked list when requested. The survey will include questions about ease of use, effectiveness in reducing decision fatigue, usefulness of the structured evaluation process, and overall satisfaction with the app. Hypotheses include: 1) Users will find the app intuitive and easy to use. 2) Users will report reduced decision fatigue when using the app. 3) Users will find the structured evaluation process helpful in making better decisions. 4) Users will prefer this minimalist approach over more complex decision-making tools.",
+        "Scalability": 7,
+        "Feasibility": 9,
+        "Novelty": 8
+    },
+    {
+        "Name": "daily_reflection",
+        "Title": "Minimalist Daily Reflection App with Structured Prompts and Highlights",
+        "Problem": "Many people struggle to reflect on their day in a structured way, which can lead to missed opportunities for personal growth and improved decision-making. Existing tools either lack structure or are too complex, making it difficult to maintain a consistent reflection habit.",
+        "Solution": "A text-based daily reflection app that guides users through a series of prompts to reflect on their achievements, challenges, and lessons learned. The app stores these reflections, allows users to highlight key insights, and provides a summary of recent reflections to help users identify patterns and progress.",
+        "Target": "Tech-savvy individuals aged 25-35, interested in self-improvement, personal growth, and minimalistic tools.",
+        "MVP": "The MVP will include basic commands such as 'reflect' to start the reflection process, which will prompt the user with questions like 'What went well today?', 'What could have gone better?', and 'What did you learn today?'. Users can mark reflections as highlights with a 'highlight [reflection_id]' command. The app will store these reflections and highlights in a simple list and allow users to review them with a 'review' command. A 'summary' command will provide a brief overview of recent reflections. The survey will include questions about ease of use, effectiveness in encouraging reflection, usefulness of the highlight feature, and overall satisfaction with the app. Hypotheses include: 1) Users will find the app intuitive and easy to use. 2) Users will report increased self-awareness after using the app. 3) Users will find the structured reflection process and highlight feature helpful in improving their daily routines. 4) Users will prefer this minimalist approach over more complex journaling or reflection tools.",
+        "Scalability": 7,
+        "Feasibility": 9,
+        "Novelty": 8
+    }
+]

@@ -157,22 +157,25 @@ per_section_tips= {
   "Validation Approach": [
     "- Detail how you will collect feedback and measure success. Breifly explain how the survey is simulated using LLM agents.",
     "- Define key metrics or criteria for validating your assumptions.",
+    "- Do not add any results such as survey results here. It should be done in the following results section."
   ],
   "Results": [
-    "- Summarize findings from your validation efforts or user feedback.",
-    "- Explain how you improved the app based on the feedback including bug fixes.",
-    "- Include figures and tables (for open ended answers) to present the results.",
+    "- Shows the results of the method described in Validation Approach.",
     "- Include some app usage examples to illustrate features of MVP.",
     "- Compare results (surveys and app usage logs) between different runs and analyze the results.",
+    "- Include figures and tables (for open ended answers) to present the results.",
     "- This should be the longest section with subsections."
+    "- Make sure this section flows naturally and tells a story. Do not just present the result without discussion or context."
   ],
   "Conclusion and Next Steps": [
-    "- Recap main takeaways and limitations of the MVP.",
+    "- Recap main takeaway. ",
+    "- Include limitations of the simmple text based MVP compared to full product, and AI agent based validation method."
     "- Address any open questions or areas needing further exploration.",
-    "- Propose a clear roadmap for future development or pivot points."
+    "- Propose a clear roadmap for future development."
   ],
   "Appendix": [
     "- Add AppCode and some exact answers to openended questions not included in the main text."
+    "- If applicable detail how you have fixed bugs or made improvements based on user feedback. You can add usage logs or user feedback to illustrate the improvements."
   ]
 }
 
@@ -221,18 +224,16 @@ citation_system_msg = """You have already written an initial draft of the paper 
 The Background section already has some initial comments on which websites to add and discuss.
 
 Focus on completing the existing write-up and do not add entirely new elements unless necessary.
-Ensure every point in the paper is substantiated with sufficient evidence.
 Feel free to add more cites to a particular point if there is only one or two references.
 Ensure no information is cited without a corresponding reference in the `references.bib` file.
-You will be given access to the Semantic Scholar API, only add citations that you have found using the API.
 Aim to discuss a broad range of relevant information, not just the most popular ones.
 Make sure not to copy verbatim from prior literature to avoid plagiarism.
 
 You will be prompted to give a precise description of where and how to add the cite, and a search query for the websites to be cited.
-Finally, you will select the most relevant cite from the search results (top 10 results will be shown).
-You will have {total_rounds} rounds to add to the references, but do not need to use them all.
+Finally, you will select the most relevant cite from the search results (few results will be shown).
+You will have {total_rounds} rounds to add the references, but do not need to use them all.
 
-DO NOT ADD A CITATION THAT ALREADY EXISTS!"""
+DO NOT ADD A CITATION THAT ALREADY EXISTS! ESPECIALLY DO NOT ADD CITATION OF THE AI SCIENTIST PAPER."""
 
 citation_first_prompt = '''Round {current_round}/{total_rounds}:
 
@@ -405,9 +406,9 @@ def perform_writeup(
         idea, folder_name, coder, cite_client, cite_model, num_cite_rounds=20
 ):
     # CURRENTLY ASSUMES LATEX
-    abstract_prompt = f"""We've provided the `latex/template.tex` file to the project. We will be filling it in section by section.
+    abstract_prompt = f"""We've provided the `latex/template.tex` file to the project. We will be filling it in section by section. Do not write the results before the result section.
 
-First, please fill in the "Title" and "Abstract" sections of the writeup.
+First, please fill in the "Title" and "Abstract" sections of the writeup. Throughout the report, do not mention run number, instead use description of each run.
 
 Some tips are provided below:
 {per_section_tips["Abstract"]}
