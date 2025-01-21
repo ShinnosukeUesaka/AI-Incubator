@@ -1,0 +1,105 @@
+THOUGHT:  
+Alex is intrigued by the app's promise of boosting productivity, especially since they value efficiency and innovation. They are curious about how FocusFlow integrates Pomodoro timers, task management, and a reward system—features that align with their tech-savvy and detail-oriented personality. They notice the app is straightforward and clean, which appeals to their minimalist aesthetic. However, they are slightly confused about how to get started and what specific commands are available. They decide to explore the app further by checking the available commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex appreciates the simplicity of the command structure and the clear instructions provided. They decide to start by adding a few tasks to test the task management feature. Since they are a perfectionist, they want to ensure tasks are prioritized correctly. They add a high-priority task related to their work and a lower-priority personal task. After adding the tasks, they check the list to confirm everything is in order. They are pleased with how intuitive the process feels and are curious about how the Pomodoro timer and focus mode will work together.  
+
+COMMAND:  
+add priority 1 Finish MVP testing for FocusFlow
+
+APP OUTPUT:
+Added task: finish mvp testing for focusflow (Priority: 1)
+
+THOUGHT:  
+Alex is satisfied that the high-priority task was added successfully. They decide to add another task, this time with a lower priority, to see how the app handles multiple tasks with different priorities. They choose a personal task related to their fitness routine, as they value maintaining a healthy lifestyle. After adding the second task, they plan to review the list to ensure both tasks are displayed correctly and prioritized as intended.  
+
+COMMAND:  
+add priority 4 Schedule yoga session for tomorrow
+
+APP OUTPUT:
+Added task: schedule yoga session for tomorrow (Priority: 4)
+
+THOUGHT:  
+Alex is pleased that the second task was added without any issues. They now want to review the list of tasks to confirm that both tasks are displayed correctly and sorted by priority. This step is important to them because they value organization and clarity in their workflow. They are also curious to see how the app visually represents task priorities. After reviewing the list, they plan to start a focus session to test the Pomodoro timer and see how it integrates with their tasks.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish mvp testing for focusflow (Priority: 1)
+2. [ ] schedule yoga session for tomorrow (Priority: 4)
+
+THOUGHT:  
+Alex is impressed with how the app clearly displays tasks and their respective priorities. They appreciate the visual distinction between high and low-priority tasks, which aligns with their need for efficiency and organization. They decide to test the Pomodoro timer by starting a focus session on the high-priority task. They are curious to see how the app handles distractions and whether the focus mode will block notifications effectively. They also wonder how the reward system works and whether they will earn points after completing the session.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is excited to begin the focus session and appreciates the immediate activation of focus mode to block distractions. They set their phone aside and dive into their work, feeling confident that the app will help them stay productive. During the session, they notice how the app's minimalist design and lack of distractions align with their preference for streamlined tools. After completing the session, they plan to check their earned points and see how the reward system motivates them to stay consistent.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is pleased with the completion of the focus session and the immediate feedback about earning 10 points. They appreciate the gamification aspect of the app, as it aligns with their love for tech and innovation. They decide to take the suggested 5-minute break to stretch and hydrate, as they value maintaining a healthy work-life balance. After the break, they plan to mark the high-priority task as completed and explore the focus mode further to see how it handles notifications and other distractions.  
+
+COMMAND:  
+complete 1
+
+APP OUTPUT:
+Marked task 1 as completed
+
+THOUGHT:  
+Alex is satisfied that the high-priority task was marked as completed successfully. They review the task list again to ensure the completed task is updated and check if the app provides any visual cues for completed tasks. They are curious about how the app handles task completion in relation to the reward system and whether completing tasks contributes to their points or level progression. After reviewing the list, they decide to test the focus mode by toggling it on and off to see how it affects their device's notifications.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [x] finish mvp testing for focusflow (Priority: 1)
+2. [ ] schedule yoga session for tomorrow (Priority: 4)
+
+THOUGHT:  
+Alex is happy to see that the completed task is clearly marked with an "x," which provides a sense of accomplishment. They appreciate the app's attention to detail in displaying task statuses. They now decide to test the focus mode by toggling it on to see how it blocks distractions. They are particularly interested in whether the app can effectively block notifications from other apps, as this is a key feature for maintaining productivity. After testing focus mode, they plan to check their points again to see if completing tasks contributes to their progress.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode activated.
+
+THOUGHT:  
+Alex is curious to see how the focus mode works in practice. They decide to simulate a distraction by opening another app or receiving a notification to test whether the focus mode blocks it effectively. They are impressed by the immediate activation of focus mode and appreciate the app's ability to create a distraction-free environment. After testing, they plan to toggle focus mode off and check their points to see if there are any updates.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode deactivated.

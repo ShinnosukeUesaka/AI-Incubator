@@ -1,0 +1,36 @@
+THOUGHT:
+Alex is intrigued by the concept of a daily reflection journal, as it aligns with their interest in mindfulness and personal development. They are curious about how the app works and what kind of prompts it offers. Alex decides to start by exploring the app's features. They notice the welcome message and the available commands. The idea of maintaining a streak and earning badges appeals to their goal-oriented nature. Alex is a bit unsure about what kind of prompts they will receive but is excited to try it out. They decide to start by adding a journal entry to see how the app responds.
+
+COMMAND:
+journal Today was a productive day at work. I finished a major feature for our app and felt a sense of accomplishment. I also managed to squeeze in a yoga session after work, which helped me unwind. Overall, a good day!
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:
+Alex feels a sense of satisfaction seeing their journal entry saved and the streak counter updated to 1 day. They appreciate the immediate feedback and the gamification aspect of maintaining a streak. Alex is curious about their progress and wants to see their stats to understand how the streaks and badges work. They also wonder if there are any badges they can unlock soon. Alex decides to check their stats to get a better understanding of their progress.
+
+COMMAND:
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+THOUGHT:
+Alex is pleased to see their progress displayed clearly, but they notice that they haven't earned any badges yet. They are motivated to maintain their streak and unlock badges, as they enjoy challenges and rewards. Alex decides to continue using the app daily to see how the streaks and badges evolve over time. They also want to view their previous journal entry to ensure it was saved correctly and to reflect on their day. Alex decides to check their journal entries next.
+
+COMMAND:
+view
+
+APP OUTPUT:
+Your Journal Entries:
+Day 1: Today was a productive day at work. I finished a major feature for our app and felt a sense of accomplishment. I also managed to squeeze in a yoga session after work, which helped me unwind. Overall, a good day!
+
+THOUGHT:
+Alex is satisfied to see their journal entry displayed correctly. They appreciate the simplicity of the app and how it allows them to reflect on their day. Alex feels motivated to continue using the app daily to build their streak and earn badges. They decide to close the app for now, as they have other tasks to attend to, such as preparing dinner and catching up on some reading. Alex plans to open the app again tomorrow to add another journal entry and continue their streak.
+
+COMMAND:
+END

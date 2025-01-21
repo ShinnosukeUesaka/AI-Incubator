@@ -1,0 +1,146 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you maintain focus?
+Yes, significantly: 0
+Somewhat: 4
+Not really: 0
+No: 0
+
+Q: How would you rate your productivity while using the app?
+Much higher: 0
+Somewhat higher: 3
+About the same: 1
+Lower: 0
+
+Q: Did the reward system motivate you to complete focus sessions?
+Yes, very motivating: 0
+Somewhat motivating: 1
+Not motivating: 3
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: The task management feature needs significant improvement. Tasks should be added separately and not combined into one. Additionally, the app should allow users to manually set task priorities and possibly include subtasks or categories for better organization. The focus mode worked well, but it would be helpful to have more customization options, such as selecting specific apps or websites to block. Finally, the reward system could be more engaging and motivating, perhaps by offering tangible rewards or integrating with other productivity tools.
+Response 2: The app could improve by providing clearer feedback on how points are earned and how tasks contribute to progress. Adding a progress tracker for tasks and more detailed explanations of the reward system would make it more motivating. Additionally, allowing users to customize task priorities and providing more detailed task management features (e.g., sub-tasks or due dates) would enhance its functionality.
+
+Q: What did you find most helpful about the app?
+Response 1: The focus mode was the most helpful feature. It effectively blocked distractions, which is crucial for maintaining focus during work sessions. The simplicity of the commands and the clear interface also made the app easy to use, despite the issues with task management.
+Response 2: The focus mode and Pomodoro-style timer were the most helpful features, as they effectively blocked distractions and helped me stay on task during work sessions. The simplicity of the interface was also a plus, making it easy to get started without a steep learning curve.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:  
+Alex is intrigued by the app's promise of enhancing productivity, especially since they often struggle with work-life balance and staying focused during long coding sessions. They are curious about how FocusFlow integrates Pomodoro timers, task management, and focus modes, as these are tools they already use in their daily routine. The reward system also catches their attention, as they enjoy gamified experiences. However, they are slightly confused about how to get started and what specific commands are available. They decide to explore the app further by typing 'help' to understand the available features and commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+list - Show all tasks
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex appreciates the simplicity of the command structure and is pleased to see that the app covers the basics they need: task management, focus sessions, and a reward system. They decide to start by adding a task to test the task management feature. They want to add a task related to their current work project, such as "Optimize backend API for scalability." This will help them gauge how intuitive the task addition process is and whether the app can handle their workflow.  
+
+COMMAND:  
+add Optimize backend API for scalability
+
+APP OUTPUT:
+Added task: optimize backend api for scalability (Priority: 3)
+
+THOUGHT:  
+Alex is satisfied that the task was added successfully but is slightly confused about the "Priority: 3" label. They wonder how priorities are assigned and whether they can customize them. They also notice that the task description was automatically converted to lowercase, which might be a minor annoyance if they prefer proper capitalization. Despite this, they decide to proceed and check the list of tasks to ensure everything is displayed correctly.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. optimize backend api for scalability (Priority: 3)
+
+THOUGHT:  
+Alex is glad to see their task listed but is still curious about how priorities are determined. They assume the app assigns a default priority and wonder if they can adjust it later. They also notice that the task list is minimalistic, which aligns with their preference for clean, distraction-free interfaces. However, they feel the app could benefit from more detailed task descriptions or sub-tasks for complex projects.  
+
+Next, Alex decides to test the focus session feature to see how well it integrates with their workflow. They want to start a focus session to work on the task they just added. They hope the app will help them stay focused and block distractions, which is a common challenge for them.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is pleased that the focus session started immediately and that the app automatically activated focus mode to block distractions. They appreciate the Pomodoro-style 25-minute timer, as it aligns with their existing productivity habits. They decide to use this time to work on optimizing the backend API.  
+
+During the focus session, Alex closes the app and begins coding. They find themselves deeply immersed in their work, occasionally glancing at the timer on their smartwatch to track progress. After about 20 minutes, they take a quick break to stretch and grab a glass of water, then return to their desk to finish the session.  
+
+Once the focus session ends, Alex reopens the app to check their progress and see if they earned any points for completing the session.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 0 points (Level 1).
+Earn 100 more points to reach Level 2!
+
+THOUGHT:  
+Alex is slightly disappointed to see that they haven’t earned any points yet, despite completing a focus session. They wonder if points are awarded only after completing tasks or if there’s another mechanism for earning rewards. They decide to check their task list again to see if the focus session contributed to task progress.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. optimize backend api for scalability (Priority: 3)
+
+THOUGHT:  
+Alex notices that the task list hasn’t changed, and there’s no indication of progress or completion. They feel a bit confused about how the app tracks productivity and rewards users. They decide to test the app further by adding another task and starting another focus session to see if points are awarded after multiple sessions or task completions.  
+
+They add a new task, "Refactor user authentication module," to see if the app handles multiple tasks effectively.  
+
+COMMAND:  
+add Refactor user authentication module
+
+APP OUTPUT:
+Added task: refactor user authentication module (Priority: 3)
+
+THOUGHT:  
+Alex is glad the second task was added successfully but is still unsure about the priority system. They decide to start another focus session to work on the new task, hoping to earn points this time. They also want to test how the app handles multiple focus sessions and whether it provides any feedback or rewards for consistent use.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex begins their second focus session, this time working on refactoring the user authentication module. They appreciate the app’s ability to block distractions, which helps them stay focused. However, they still feel uncertain about how the reward system works and whether their efforts are being tracked effectively.  
+
+After completing the focus session, Alex reopens the app to check their points and task progress again.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 0 points (Level 1).
+Earn 100 more points to reach Level 2!
+
+THOUGHT:  
+Alex is frustrated to see that they still have 0 points after completing two focus sessions. They feel the app’s reward system is unclear and not motivating enough. They decide to explore the app’s focus mode to see if it offers additional features or insights into their productivity.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode deactivated.
+----------------------------------------

@@ -1,0 +1,94 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you maintain focus?
+Yes, significantly: 3
+Somewhat: 1
+Not really: 0
+No: 0
+
+Q: How would you rate your productivity while using the app?
+Much higher: 2
+Somewhat higher: 2
+About the same: 0
+Lower: 0
+
+Q: Did the reward system motivate you to complete focus sessions?
+Yes, very motivating: 1
+Somewhat motivating: 3
+Not motivating: 0
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: I would suggest adding more details to tasks, such as deadlines, priorities, or categories, to help better organize and prioritize tasks. Additionally, it would be helpful to have more visibility into how the reward system works and what the points can be used for. Finally, integrating with other productivity tools or calendars could make the app even more versatile and useful.
+Response 2: I would suggest adding more detailed task management features, such as due dates, priorities, and categories. Additionally, it would be helpful to have more customization options for the focus mode, like blocking specific websites or apps. Finally, providing insights or analytics on productivity over time would be a valuable addition.
+
+Q: What did you find most helpful about the app?
+Response 1: I found the Pomodoro timer and focus mode to be the most helpful features. They provided a structured way to stay focused and minimized distractions, which significantly boosted my productivity. The simplicity and ease of use of the app were also very appealing, making it straightforward to get started and manage tasks.
+Response 2: The most helpful feature was the focus mode, which effectively blocked distractions and created a distraction-free environment. The Pomodoro timer also provided a structured approach to work sessions, which helped in maintaining focus and productivity.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:
+Alex is intrigued by the app's promise of boosting productivity, especially since they often juggle multiple tasks at work and personal projects. They appreciate the clean, straightforward introduction and the mention of features like the Pomodoro timer and task management, which align with their need for structured work sessions. However, they are slightly confused about how to get started since there are no immediate prompts or visual cues. They decide to explore the app further by checking the available commands.
+
+COMMAND:
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+list - Show all tasks
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:
+Alex is pleased to see a clear list of commands, which makes the app feel intuitive and user-friendly. They like the simplicity of the commands and how they align with the app's core features. However, they are curious about how the reward system works and what "points" represent. They decide to start by adding a task to see how the task management feature functions. Alex is also interested in testing the focus mode and Pomodoro timer but wants to take it step by step.
+
+COMMAND:
+add Finish debugging the new API endpoint
+
+APP OUTPUT:
+Added task: finish debugging the new api endpoint
+
+THOUGHT:
+Alex is satisfied with how quickly and smoothly the task was added. They appreciate the app's responsiveness and the lack of unnecessary clutter in the interface. They decide to add another task to test the task management system further. This time, they choose a personal task to see if the app can handle both work and personal responsibilities. Alex is also thinking ahead about how they might use the Pomodoro timer to tackle these tasks efficiently.
+
+COMMAND:
+add Plan weekend trip to Boston
+
+APP OUTPUT:
+Added task: plan weekend trip to boston
+
+THOUGHT:
+Alex is impressed by how seamlessly the app handles multiple tasks, both professional and personal. They like that the app doesn't differentiate between types of tasks, making it versatile for their lifestyle. They decide to list all their tasks to get an overview of what they need to accomplish. This will help them prioritize and decide which task to tackle first using the Pomodoro timer. Alex is also curious about how the app will display the tasks and whether it will include any additional details like deadlines or priorities.
+
+COMMAND:
+list
+
+APP OUTPUT:
+Your tasks:
+1. finish debugging the new api endpoint
+2. plan weekend trip to boston
+
+THOUGHT:
+Alex appreciates the simplicity of the task list, which is easy to read and understand. They like that the app keeps things minimalistic, avoiding unnecessary complexity. However, they wonder if there are options to add more details to tasks, such as deadlines or categories, to better organize their workload. They decide to test the Pomodoro timer next by starting a focus session on the first task, "finish debugging the new API endpoint." Alex is curious about how the app will handle the timer and whether it will provide any notifications or progress updates during the session.
+
+COMMAND:
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:
+Alex is pleased with the immediate start of the focus session and the activation of focus mode, which aligns with their need to minimize distractions. They like the clear indication of the session duration (25 minutes) and the reassurance that distractions are blocked. They decide to use this time to work on debugging the API endpoint, fully immersing themselves in the task. Alex is curious about how the app will notify them when the session ends and whether it will automatically log the completed session for rewards.
+
+COMMAND:
+END
+----------------------------------------

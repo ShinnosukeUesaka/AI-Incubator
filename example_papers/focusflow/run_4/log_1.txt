@@ -1,0 +1,108 @@
+THOUGHT:  
+Alex, a tech-savvy professional, is intrigued by the app's promise of productivity and focus. They are looking for tools to optimize their workflow and manage their busy schedule. The app's features, such as the Pomodoro timer, task management, and focus mode, align with their needs. They appreciate the gamified reward system, as it adds a fun element to productivity. However, they are curious about how intuitive the app is and whether it integrates well with their existing tools. Alex decides to explore the app further to see if it can become a part of their daily routine.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex is pleased with the straightforward command structure of the app. They appreciate the clarity of the available commands and how they align with their productivity needs. They decide to start by adding a few tasks to test the task management feature. Since they are juggling multiple projects at work, they want to see how well the app handles prioritization. They also note the focus mode and reward system, which they plan to explore later. Alex is curious about how the app will handle task completion and whether it will sync seamlessly with their workflow.  
+
+COMMAND:  
+add priority 1 Finish Q3 product roadmap
+
+APP OUTPUT:
+Added task: finish q3 product roadmap (Priority: 1)
+
+THOUGHT:  
+Alex is satisfied with how quickly and efficiently the app added the high-priority task. They appreciate the simplicity of the command and the immediate feedback. Now, they want to add a few more tasks to simulate a real-world scenario. They decide to include a mix of high and low-priority tasks to test the app's ability to handle a diverse workload. Alex is also curious about how the app will display these tasks and whether it will allow them to easily reorder or adjust priorities later.  
+
+COMMAND:  
+add priority 3 Schedule team meeting for next week
+
+APP OUTPUT:
+Added task: schedule team meeting for next week (Priority: 3)
+
+THOUGHT:  
+Alex is pleased with how the app continues to handle task additions smoothly. They note that the app is intuitive and doesn’t require much effort to use, which aligns with their preference for efficiency. Next, they want to add a low-priority task to see how the app differentiates between priorities. They also plan to check the task list afterward to see how the app organizes and displays tasks with varying priorities. Alex is curious about whether the app will allow them to filter or sort tasks by priority, as this would be a useful feature for their workflow.  
+
+COMMAND:  
+add priority 5 Organize desk drawer
+
+APP OUTPUT:
+Added task: organize desk drawer (Priority: 5)
+
+THOUGHT:  
+Alex is impressed with how the app handles tasks of varying priorities without any issues. They appreciate the simplicity of the command structure and the immediate feedback. Now, they want to view the list of tasks to see how the app organizes them. They are particularly interested in whether the app sorts tasks by priority or if it maintains the order in which they were added. Alex also wonders if the app provides any visual cues or color-coding to differentiate priorities, as this would make it easier to scan and prioritize tasks at a glance.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish q3 product roadmap (Priority: 1)
+2. [ ] schedule team meeting for next week (Priority: 3)
+3. [ ] organize desk drawer (Priority: 5)
+
+THOUGHT:  
+Alex is pleased with how the app displays the tasks in a clear and organized manner. They appreciate that the app lists tasks in the order they were added but includes the priority level next to each task. This makes it easy to identify high-priority tasks at a glance. However, they wonder if the app could sort tasks by priority automatically or if there’s a way to reorder them manually. Alex also notes that the app doesn’t use visual cues like color-coding, which could make prioritization even more intuitive. They decide to test the task completion feature next to see how the app handles marking tasks as done.  
+
+COMMAND:  
+complete 2
+
+APP OUTPUT:
+Marked task 2 as completed
+
+THOUGHT:  
+Alex is satisfied with how the app handles task completion. They appreciate the simplicity of the command and the immediate feedback. They decide to check the task list again to see how the app updates it after completing a task. They are curious whether completed tasks are removed from the list or marked as done but remain visible. Alex also wonders if the app provides any analytics or insights into completed tasks, such as time spent or productivity trends, which could be useful for their workflow.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish q3 product roadmap (Priority: 1)
+2. [x] schedule team meeting for next week (Priority: 3)
+3. [ ] organize desk drawer (Priority: 5)
+
+THOUGHT:  
+Alex is pleased to see that the app marks completed tasks with an "[x]" while keeping them in the list. This allows them to track what they’ve accomplished without losing context. They appreciate this feature, as it aligns with their need for visibility into their progress. However, they wonder if there’s a way to archive or hide completed tasks to declutter the list over time. Alex also notes that the app doesn’t provide any additional details about completed tasks, such as the time or date they were finished, which could be a useful addition. They decide to test the focus session feature next to see how it integrates with their workflow.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is excited to try the focus session feature, as they often struggle with distractions while working. They appreciate that the app automatically starts a 25-minute Pomodoro session and activates focus mode to block distractions. They wonder if the app allows customization of the session duration or if it strictly follows the Pomodoro technique. Alex also notes that the app doesn’t specify what distractions are being blocked, so they’re curious about how effective focus mode is. They decide to use the session to work on their high-priority task, "Finish Q3 product roadmap," and see how the app handles interruptions or notifications during this time.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is impressed with how the app gamifies productivity by awarding points for completing focus sessions. They appreciate the encouragement to take a break, as it aligns with their goal of maintaining work-life balance. They note that the app tracks progress toward leveling up, which adds a motivational element. However, they wonder if the app provides more detailed insights into their focus sessions, such as total time spent or trends over time. Alex also considers whether the app integrates with other tools they use, like calendars or fitness trackers, to provide a more holistic view of their productivity. They decide to check their points and explore the focus mode feature next.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 10 points (Level 1).
+Earn 90 more points to reach Level 2!

@@ -1,0 +1,44 @@
+THOUGHT:
+Alex, being a mindfulness enthusiast, is excited to try out the Daily Reflection Journal app. They are looking for a tool to help them reflect on their day and track their progress over time. The app's introduction is clear and straightforward, which Alex appreciates. They like the idea of earning badges for maintaining a streak, as it aligns with their love for productivity hacks and gamification. Alex is curious about the available badges and how they can earn them. They decide to start by adding a journal entry to see how the app works.
+
+COMMAND:
+journal happy Today was a productive day! I finished a big project at work and had a great yoga session in the evening. Feeling accomplished and balanced.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:
+Alex is pleased to see that their journal entry was successfully saved and that they have started a streak. They feel motivated to continue using the app daily to maintain and grow this streak. Alex is curious about their current stats and wants to see what badges they might be close to earning. They decide to check their stats to get a better understanding of their progress.
+
+COMMAND:
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+Mood Statistics:
+Happy days: 1
+
+THOUGHT:
+Alex is happy to see their progress, but they notice that they haven't earned any badges yet. They are curious about what badges are available and what they need to do to earn them. Alex decides to explore the available badges to set some goals for themselves. They are particularly interested in seeing if there are any badges related to mindfulness or productivity, as these align with their personal interests.
+
+COMMAND:
+badges
+
+APP OUTPUT:
+Available Badges:
+3-day Streak: Journal for 3 consecutive days
+7-day Streak: Journal for 7 consecutive days
+14-day Streak: Journal for 14 consecutive days
+30-day Streak: Journal for 30 consecutive days
+Mood Master: Track mood for 7 days
+Reflection Pro: Write 10 detailed entries
+
+THOUGHT:
+Alex is excited to see the variety of badges available, especially the ones related to streaks and mood tracking. They are particularly motivated by the 7-day Streak and Mood Master badges, as these align with their goal of maintaining a consistent mindfulness practice. Alex decides to set a personal goal to earn the 7-day Streak badge and starts planning how they can incorporate journaling into their daily routine. They close the app for now, planning to return tomorrow to add another entry.
+
+COMMAND:
+END

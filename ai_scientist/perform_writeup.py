@@ -34,15 +34,15 @@ def generate_latex(coder, folder_name, pdf_file, timeout=30, num_error_correctio
     )
     if references_bib is None:
         print("No references.bib found in template.tex")
-        return
-    bib_text = references_bib.group(1)
-    cites = [cite.strip() for item in cites for cite in item.split(",")]
-    for cite in cites:
-        if cite not in bib_text:
-            print(f"Reference {cite} not found in references.")
-            prompt = f"""Reference {cite} not found in references.bib. Is this included under a different name?
-If so, please modify the citation in template.tex to match the name in references.bib at the top. Otherwise, remove the cite."""
-            coder.run(prompt)
+    else:
+        bib_text = references_bib.group(1)
+        cites = [cite.strip() for item in cites for cite in item.split(",")]
+        for cite in cites:
+            if cite not in bib_text:
+                print(f"Reference {cite} not found in references.")
+                prompt = f"""Reference {cite} not found in references.bib. Is this included under a different name?
+    If so, please modify the citation in template.tex to match the name in references.bib at the top. Otherwise, remove the cite."""
+                coder.run(prompt)
 
     # Check all included figures are actually in the directory.
     with open(writeup_file, "r") as f:
@@ -139,33 +139,31 @@ per_section_tips= {
     "- State what you have learned from building and testing the MVP."
 ],
   "Background": [
-    "- Include a few relevant websites that are most relevant to the idea. This section should be very concise.",
+    "- Include a few relevant websites that are most relevant to the idea. This section should be very concise. NEVER mention the our approach or results from the experiments.",
   ],
   "Problem Statement": [
     "- Describe the pain point or challenge in detail.",
-    "- Clearly articulate the gap in existing solutions or opportunities for innovation."
-  ],
-  "Market Opportunity": [
-    "- Present relevant market research or data indicating the demand.",
-    "- Identify your target customer segments and how they benefit from your solution.",
-    "- This section should be relatively short."
+    "- Clearly articulate the gap in existing solutions or opportunities for innovation.",
+    "- NEVER mention the our approach or results from the experiments."
   ],
   "MVP Implementation": [
-    "- Provide a high-level technical overview of the MVP.",
+    "- First present the solution that you are proposing that corresponds to the problem statement.",
+    "- Provide a high-level technical overview of the MVP to test the effectiveness of the solution. Remember, MVP is not the solution, it is just a way to test the solution.",
+    "- You can put conversation logs or usage logs to illustrate the features of the MVP. DO NOT ADD ANY SURVEY RESULTS.",
     "- Include simple diagrams using TikZ."
   ],
   "Validation Approach": [
-    "- Detail how you will collect feedback and measure success. Breifly explain how the survey is simulated using LLM agents.",
     "- Define key metrics or criteria for validating your assumptions.",
-    "- Do not add any results such as survey results here. It should be done in the following results section."
+    "- List imprortant experiments (Runs) you have conducted, do not add the ones that had bugs. We are comparing the results across different features. We are not interested in bug fixes or small UX improvments here. Do not use run numbers, instead use the description of the experiments."
+    "- Breifly explain how the survey is simulated using LLM agents.",
+    "- DO NOT ADD ANY SURVEY RESULTS. It should be done in the following results section."
   ],
   "Results": [
     "- Shows the results of the method described in Validation Approach.",
+    "- Compare results (surveys and app usage logs) between different runs and analyze the results. Do not add the ones that had bugs. We are comparing the results across different features. We are not interested in bug fixes or small UX improvments here. Do not use run numbers, instead use the description of the experiments.",
     "- Include some app usage examples to illustrate features of MVP.",
-    "- Compare results (surveys and app usage logs) between different runs and analyze the results.",
     "- Include figures and tables (for open ended answers) to present the results.",
-    "- This should be the longest section with subsections."
-    "- Make sure this section flows naturally and tells a story. Do not just present the result without discussion or context."
+    "- Make sure this section flows naturally and tells a story. Make sure it matches with the validation approach. Do not just present the result without discussion or context."
   ],
   "Conclusion and Next Steps": [
     "- Recap main takeaway. ",
@@ -175,7 +173,7 @@ per_section_tips= {
   ],
   "Appendix": [
     "- Add AppCode and some exact answers to openended questions not included in the main text."
-    "- If applicable detail how you have fixed bugs or made improvements based on user feedback. You can add usage logs or user feedback to illustrate the improvements."
+    "- Detail how you have fixed bugs or made improvements based on user feedback over all the runs. You can add usage logs or user feedback to illustrate the improvements."
   ]
 }
 
@@ -194,7 +192,7 @@ error_list = """- Unenclosed math symbols
 - Unescaped symbols, e.g. shakespeare_char should be shakespeare\\_char in text
 - Incorrect closing of environments, e.g. </end{{figure}}> instead of \\end{{figure}}
 - Incorrect dash, e.g. - instead of --
-- Incorrect straight quotes
+- Incorrect straight quotes. You need to use ``content'' instead of "content"
 """
 
 refinement_prompt = (
@@ -233,6 +231,7 @@ You will be prompted to give a precise description of where and how to add the c
 Finally, you will select the most relevant cite from the search results (few results will be shown).
 You will have {total_rounds} rounds to add the references, but do not need to use them all.
 
+You do not need to scrape the website as the information has already been provided to you. Say no to Add URL to the chat?.
 DO NOT ADD A CITATION THAT ALREADY EXISTS! ESPECIALLY DO NOT ADD CITATION OF THE AI SCIENTIST PAPER."""
 
 citation_first_prompt = '''Round {current_round}/{total_rounds}:
@@ -425,7 +424,6 @@ Be sure to first name the file and use *SEARCH/REPLACE* blocks to perform these 
     )
     for section in [
         "Problem Statement", 
-        "Market Opportunity",
         "MVP Implementation",
         "Validation Approach",
         "Results",
@@ -498,8 +496,8 @@ First, re-think the Title if necessary. Keep this concise and descriptive of the
     )
     for section in [
         "Abstract",
+        "Background",
         "Problem Statement", 
-        "Market Opportunity",
         "MVP Implementation",
         "Validation Approach",
         "Results",
@@ -544,6 +542,8 @@ if __name__ == "__main__":
     notes = osp.join(folder_name, "notes.txt")
     model = args.model
     writeup_file = osp.join(folder_name, "latex", "template.tex")
+    if not osp.exists(writeup_file):
+        raise ValueError(f"Writeup file {writeup_file} not found")
     ideas_file = osp.join(folder_name, "ideas.json")
     with open(ideas_file, "r") as f:
         ideas = json.load(f)
@@ -559,6 +559,8 @@ if __name__ == "__main__":
         main_model = Model("deepseek/deepseek-coder")
     elif args.model == "llama3.1-405b":
         main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+    elif args.model == "deepseek-chat":
+        main_model = Model("deepseek/deepseek-chat")
     else:
         main_model = Model(model)
     coder = Coder.create(
@@ -573,6 +575,6 @@ if __name__ == "__main__":
         generate_latex(coder, args.folder, f"{args.folder}/test.pdf")
     else:
         try:
-            perform_writeup(idea, folder_name, coder, client, client_model)
+            perform_writeup(idea, folder_name, coder, client, client_model, num_cite_rounds=2)
         except Exception as e:
             print(f"Failed to perform writeup: {e}")

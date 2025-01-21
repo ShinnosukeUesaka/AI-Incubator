@@ -1,0 +1,95 @@
+THOUGHT:  
+Alex is intrigued by the concept of a daily reflection journal, as it aligns perfectly with their interest in mindfulness and personal development. They are excited to start using the app to track their daily reflections and moods. The app's introduction is clear and straightforward, and Alex appreciates the gamification aspect with streaks and badges, which motivates them to maintain consistency. They decide to start by adding their first journal entry, reflecting on their day and noting their mood.  
+
+COMMAND:  
+journal happy Today was a productive day at work. I finished a challenging project and felt a great sense of accomplishment. I also managed to squeeze in a yoga session after work, which helped me unwind. Feeling grateful for the little wins!  
+
+---  
+
+APP OUTPUT:  
+Entry added successfully!  
+Your current streak: 1 day  
+You earned the "First Entry" badge!  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is pleased to see that their entry was successfully added and that they earned their first badge. They feel motivated to continue using the app daily. However, they are curious about their current streak and the badges they can earn in the future. They decide to check their stats and explore the available badges to understand what they need to do to unlock more achievements.  
+
+COMMAND:  
+stats  
+
+---  
+
+APP OUTPUT:  
+Your stats:  
+- Current streak: 1 day  
+- Longest streak: 1 day  
+- Total entries: 1  
+
+Badges earned:  
+- First Entry  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is satisfied with the stats overview and feels encouraged by their progress. They are now curious about the other badges they can earn and the requirements for each. They decide to explore the list of available badges to set some goals for themselves.  
+
+COMMAND:  
+badges  
+
+---  
+
+APP OUTPUT:  
+Available badges:  
+- First Entry: Earned by adding your first journal entry.  
+- 7-Day Streak: Earned by journaling for 7 consecutive days.  
+- 30-Day Streak: Earned by journaling for 30 consecutive days.  
+- Mood Tracker: Earned by logging moods for 10 entries.  
+- Reflective Master: Earned by writing 50 journal entries.  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is excited about the variety of badges available and sets a personal goal to achieve the 7-Day Streak and Mood Tracker badges. They feel motivated to continue using the app daily and decide to check their previous entry to see how it looks in the journal.  
+
+COMMAND:  
+view  
+
+---  
+
+APP OUTPUT:  
+Your journal entries:  
+1. [Happy] Today was a productive day at work. I finished a challenging project and felt a great sense of accomplishment. I also managed to squeeze in a yoga session after work, which helped me unwind. Feeling grateful for the little wins!  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is happy to see their entry displayed clearly with the mood tag. They feel that the app is user-friendly and meets their needs for daily reflection. They decide to close the app for now and continue using it the next day to maintain their streak.  
+
+COMMAND:  
+END

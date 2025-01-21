@@ -1,0 +1,44 @@
+THOUGHT:  
+Alex is intrigued by the app's concept of daily reflection and earning badges, which aligns with their interest in personal development and mindfulness. They are curious about how the app works and want to explore its features. Alex decides to start by adding a journal entry to see how the process feels. They are slightly confused about whether they should include a mood with their entry or just write freely. They like the idea of maintaining a streak and earning badges, as it adds a gamified element to their journaling practice.  
+
+COMMAND:  
+journal happy Today was a productive day at work! I finished a big project and felt really accomplished. I also managed to squeeze in a yoga session, which helped me unwind.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:  
+Alex feels a sense of accomplishment seeing their journal entry saved and the streak counter starting. They are motivated to keep this streak going and are curious about what badges they can earn. They decide to check their stats to see more details about their progress.  
+
+COMMAND:  
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+Mood Statistics:
+Happy days: 1
+
+THOUGHT:  
+Alex is pleased to see their progress, especially the mood statistics, which they find insightful. They wonder what badges are available and how they can earn them. They decide to explore the badges section to understand the requirements and set some personal goals.  
+
+COMMAND:  
+badges
+
+APP OUTPUT:
+Available Badges:
+3-day Streak: Journal for 3 consecutive days
+7-day Streak: Journal for 7 consecutive days
+14-day Streak: Journal for 14 consecutive days
+30-day Streak: Journal for 30 consecutive days
+Mood Master: Track mood for 7 days
+Reflection Pro: Write 10 detailed entries
+
+THOUGHT:  
+Alex is excited about the badges and sets a goal to earn the 7-day Streak and Mood Master badges. They appreciate the clear requirements and feel motivated to continue journaling daily. They decide to close the app for now and return tomorrow to add another entry.  
+
+COMMAND:  
+END

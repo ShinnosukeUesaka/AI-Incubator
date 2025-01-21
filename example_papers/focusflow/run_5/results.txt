@@ -1,0 +1,145 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you maintain focus?
+Yes, significantly: 2
+Somewhat: 1
+Not really: 1
+No: 0
+
+Q: How would you rate your productivity while using the app?
+Much higher: 2
+Somewhat higher: 1
+About the same: 1
+Lower: 0
+
+Q: Did the reward system motivate you to complete focus sessions?
+Yes, very motivating: 2
+Somewhat motivating: 0
+Not motivating: 2
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: The app needs to handle task management more reliably. It should correctly add, list, and complete tasks without duplicating or ignoring entries. The interface could also benefit from clearer feedback when commands are executed, and the reward system could be more engaging to motivate users.
+Response 2: 1. Add a feature to archive or hide completed tasks to declutter the task list.  
+2. Allow customization of break times based on user preferences.  
+3. Provide longer-term productivity insights, such as weekly or monthly summaries.  
+4. Integrate with external tools like calendars or project management software.  
+5. Add reminders or nudges during focus sessions to encourage staying on track.
+
+Q: What did you find most helpful about the app?
+Response 1: The concept of combining a Pomodoro timer with task management is helpful, and the ability to customize focus session durations is a nice feature. The clean and straightforward introduction also made the app feel approachable.
+Response 2: The most helpful feature was the focus mode, which effectively blocked distractions and helped me stay on task. I also appreciated the clear task prioritization and the reward system, which motivated me to complete focus sessions consistently. The productivity insights were a nice bonus, providing a quick overview of my progress.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:  
+Alex, being a productivity enthusiast, is intrigued by the app's promise of helping them stay focused. They are currently exploring the app for the first time and are curious about how it can integrate into their daily routine. They appreciate the clean and straightforward introduction, which aligns with their preference for minimalist design. However, they are slightly confused about how to get started and what specific commands are available. They decide to explore the app further by checking the available commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start [minutes] - Begin focus session (default: 25, or specify duration)
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+Tip: Use 'start 50' for a 50-minute focus session
+
+THOUGHT:  
+Alex is pleased to see a clear list of commands, which makes the app feel intuitive and easy to use. They appreciate the flexibility of customizing focus session durations, as they often work in longer blocks. They decide to start by adding a few tasks to their list, prioritizing them based on urgency. They also note the reward system, which appeals to their competitive nature and desire for gamified productivity.  
+
+COMMAND:  
+add priority 1 Debug the API integration issue  
+add priority 3 Write documentation for the new feature  
+add priority 2 Review pull requests
+
+APP OUTPUT:
+Added task: debug the api integration issue add priority 3 write documentation for the new feature add priority 2 review pull requests (Priority: 1)
+
+THOUGHT:  
+Alex notices that the app seems to have misinterpreted their input, combining all three tasks into one entry with a priority of 1. This is confusing and frustrating, as it doesn't align with their expectations for task management. They decide to try again, this time entering one task at a time to ensure clarity.  
+
+COMMAND:  
+add priority 1 Debug the API integration issue
+
+APP OUTPUT:
+Added task: debug the api integration issue (Priority: 1)
+
+THOUGHT:  
+Alex is relieved that the app correctly added the first task this time. They feel more confident about the app's functionality and proceed to add the remaining tasks individually to avoid any further confusion. They appreciate the immediate feedback from the app, which helps them stay on track.  
+
+COMMAND:  
+add priority 3 Write documentation for the new feature
+
+APP OUTPUT:
+Added task: write documentation for the new feature (Priority: 3)
+
+THOUGHT:  
+Alex is satisfied with how the app handled the second task. They decide to add the final task to their list, ensuring that their priorities are clearly reflected. They are now ready to review their tasks and start a focus session to tackle the highest-priority item.  
+
+COMMAND:  
+add priority 2 Review pull requests
+
+APP OUTPUT:
+Added task: review pull requests (Priority: 2)
+
+THOUGHT:  
+Alex is pleased that all three tasks have been added correctly with their respective priorities. They decide to review their task list to ensure everything is in order before starting a focus session. They are curious about how the app will display the tasks and whether it will sort them by priority.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] debug the api integration issue add priority 3 write documentation for the new feature add priority 2 review pull requests (Priority: 1)
+2. [ ] debug the api integration issue (Priority: 1)
+3. [ ] review pull requests (Priority: 2)
+4. [ ] write documentation for the new feature (Priority: 3)
+
+THOUGHT:  
+Alex is confused and slightly frustrated. The task list includes the earlier incorrect entry (task 1) and duplicates of the tasks they added later. This inconsistency makes the app feel unreliable for task management. They decide to clear the incorrect entries and start fresh, hoping the app will handle the tasks correctly this time.  
+
+COMMAND:  
+complete 1  
+complete 2  
+complete 3  
+complete 4
+
+APP OUTPUT:
+Marked task 1 as completed
+
+THOUGHT:  
+Alex is puzzled that only the first task was marked as completed. They expected all four tasks to be cleared. This behavior is inconsistent and makes the app feel buggy. They decide to try completing the remaining tasks one by one to see if the app responds correctly.  
+
+COMMAND:  
+complete 2
+
+APP OUTPUT:
+Marked task 2 as completed
+
+THOUGHT:  
+Alex is growing increasingly frustrated with the app's inconsistent behavior. They decide to complete the remaining tasks individually, hoping the app will eventually clear the list. They are starting to question the app's reliability for task management, which is a critical feature for them.  
+
+COMMAND:  
+complete 3  
+complete 4
+
+APP OUTPUT:
+Marked task 3 as completed
+
+THOUGHT:  
+Alex is now thoroughly disappointed. The app only marked task 3 as completed and ignored task 4. This inconsistency makes the app feel unreliable and unusable for their needs. They decide to stop using the app for now and explore other productivity tools.  
+
+COMMAND:  
+END
+----------------------------------------

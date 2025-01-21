@@ -1,0 +1,111 @@
+THOUGHT:  
+Alex is intrigued by the concept of a daily reflection journal. As someone who values mindfulness and personal growth, they see this app as a potential tool to enhance their daily routine. They are curious about how the app works and what kind of prompts it offers. Alex likes the idea of earning badges for maintaining a streak, as it aligns with their goal-oriented personality. They decide to start by adding a journal entry to see how the app responds.  
+
+COMMAND:  
+journal Today was a productive day at work. I finished a major project and felt a sense of accomplishment. I also managed to squeeze in a quick yoga session, which helped me unwind. Looking forward to tomorrow!
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:  
+Alex is pleased to see that their journal entry was successfully saved and that they’ve started a streak. They appreciate the immediate feedback about their streak, as it motivates them to continue using the app. However, they are curious about what kind of badges they can earn and how the streaks work over time. Alex decides to check their stats to get a better understanding of their progress and any potential rewards.  
+
+COMMAND:  
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+THOUGHT:  
+Alex notes that their current streak is just starting, and they haven’t earned any badges yet. They feel motivated to maintain their streak and unlock badges, as they enjoy gamified challenges. However, they wonder what kind of badges are available and what milestones they need to reach to earn them. Alex also wants to see their previous journal entries to ensure everything is being recorded correctly. They decide to view their entries to confirm.  
+
+COMMAND:  
+view
+
+APP OUTPUT:
+Your Journal Entries:
+Day 1: Today was a productive day at work. I finished a major project and felt a sense of accomplishment. I also managed to squeeze in a quick yoga session, which helped me unwind. Looking forward to tomorrow!
+
+THOUGHT:  
+Alex is satisfied to see their journal entry displayed correctly. They appreciate the simplicity of the app and how it organizes their reflections. However, they are still curious about the badges and how the app might encourage them to reflect more deeply. Alex decides to close the app for now and return to it the next day to continue their streak. They spend the rest of their evening reading a book on emotional intelligence and planning their next day.  
+
+The next morning, Alex opens the app again, eager to maintain their streak and see if the app offers any new features or prompts.  
+
+COMMAND:  
+journal Today, I want to focus on being more present during meetings. I often get distracted by emails, so I’ll try to keep my phone away and actively listen. Also, I’m excited to try a new meditation technique I read about!
+
+APP OUTPUT:
+Journal entry saved! Current streak: 2 days
+
+THOUGHT:  
+Alex is happy to see their streak has increased to 2 days. They feel a sense of accomplishment and are motivated to keep going. They wonder if the app will eventually offer prompts or suggestions to guide their reflections, as they enjoy structured self-improvement tools. Alex also thinks it would be helpful to see a summary of their progress over time, such as trends in their mood or productivity. They decide to check their stats again to see if anything has changed.  
+
+COMMAND:  
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 2 days
+Longest streak: 2 days
+Badges earned: None
+
+THOUGHT:  
+Alex notices that their streak has increased, but they still haven’t earned any badges. They are curious about what milestones trigger badge rewards and whether the app provides any guidance on how to reflect more effectively. Alex decides to close the app for now and return to it the next day. They spend the rest of their day attending meetings, practicing the new meditation technique, and enjoying a healthy dinner.  
+
+The following morning, Alex opens the app again, determined to maintain their streak. They reflect on their previous goal of being more present during meetings and decide to journal about their progress.  
+
+COMMAND:  
+journal Yesterday, I successfully stayed present during meetings by keeping my phone away. It felt great to actively listen and contribute. I also tried the new meditation technique, and it helped me feel more grounded. Today, I want to focus on setting clear priorities for the day.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 3 days
+
+THOUGHT:  
+Alex is thrilled to see their streak has reached 3 days. They feel a sense of momentum and are eager to see if they’ll earn a badge soon. However, they are still unsure about the criteria for earning badges and whether the app offers any additional features, such as prompts or analytics. Alex decides to explore the app further by checking their stats and journal entries to see if there’s any new information or functionality.  
+
+COMMAND:  
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 3 days
+Longest streak: 3 days
+Badges earned: 3-day Streak
+
+THOUGHT:  
+Alex is excited to see they’ve earned their first badge for maintaining a 3-day streak. They appreciate the positive reinforcement and feel motivated to continue using the app. However, they wonder what other badges are available and how the app might evolve as they continue their streak. Alex also thinks it would be helpful to have more detailed analytics, such as insights into their mood or productivity trends over time. They decide to view their journal entries to reflect on their progress so far.  
+
+COMMAND:  
+view
+
+APP OUTPUT:
+Your Journal Entries:
+Day 1: Today was a productive day at work. I finished a major project and felt a sense of accomplishment. I also managed to squeeze in a quick yoga session, which helped me unwind. Looking forward to tomorrow!
+Day 2: Today, I want to focus on being more present during meetings. I often get distracted by emails, so I’ll try to keep my phone away and actively listen. Also, I’m excited to try a new meditation technique I read about!
+Day 3: Yesterday, I successfully stayed present during meetings by keeping my phone away. It felt great to actively listen and contribute. I also tried the new meditation technique, and it helped me feel more grounded. Today, I want to focus on setting clear priorities for the day.
+
+THOUGHT:  
+Alex reviews their journal entries and feels a sense of pride in their progress. They appreciate how the app helps them track their reflections and goals. However, they still feel the app could benefit from additional features, such as guided prompts, mood tracking, or insights into their journaling patterns. Alex decides to close the app for now and return to it the next day. They spend the rest of their day setting priorities, attending a yoga class, and connecting with friends over dinner.  
+
+The following morning, Alex opens the app again, eager to continue their streak and see if they can earn another badge.  
+
+COMMAND:  
+journal Today, I’m feeling a bit overwhelmed with my to-do list. I’ll try to tackle one task at a time and take short breaks to stay focused. I also want to practice gratitude by listing three things I’m thankful for today.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 4 days
+
+THOUGHT:  
+Alex is pleased to see their streak has reached 4 days. They feel a sense of accomplishment and are motivated to keep going. However, they are still curious about what other badges are available and whether the app offers any additional features, such as prompts or analytics. Alex decides to check their stats to see if they’ve earned any new badges or if there’s any new information about their progress.  
+
+COMMAND:  
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 4 days
+Longest streak: 4 days
+Badges earned: 3-day Streak

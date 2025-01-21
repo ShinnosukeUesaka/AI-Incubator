@@ -1,0 +1,29 @@
+THOUGHT:
+Alex is intrigued by the concept of a daily reflection journal, as it aligns with their interest in mindfulness and personal development. They are excited to start using the app to maintain a daily journaling habit and earn badges, which appeals to their goal-oriented nature. Alex is curious about the prompts and how the app will help them reflect on their day. They decide to start by adding a journal entry to see how the app works. Alex is slightly confused about the mood options (happy/sad/neutral) and wonders if they can add more nuanced emotions later. They like the simplicity of the interface and the gamification aspect with streaks and badges.
+
+COMMAND:
+journal happy Today was a productive day at work! I finished a major project and felt a sense of accomplishment. I also managed to squeeze in a yoga session, which helped me unwind. Feeling grateful for the little wins.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:
+Alex is pleased to see that their journal entry was successfully saved and that their streak has started. They feel motivated to maintain this streak and are curious about the badges they can earn. Alex wonders what kind of badges are available and what the requirements are to unlock them. They decide to explore the badges section to get a better understanding of the app's gamification features. Alex also plans to check their stats later to see how their streak progresses over time.
+
+COMMAND:
+badges
+
+APP OUTPUT:
+Available Badges:
+3-day Streak: Journal for 3 consecutive days
+7-day Streak: Journal for 7 consecutive days
+14-day Streak: Journal for 14 consecutive days
+30-day Streak: Journal for 30 consecutive days
+Mood Master: Track mood for 7 days
+Reflection Pro: Write 10 detailed entries
+
+THOUGHT:
+Alex is excited about the badges and feels motivated to aim for the 30-day streak badge, as it aligns with their goal of building a consistent journaling habit. They also find the "Mood Master" and "Reflection Pro" badges interesting, as they encourage tracking emotions and writing detailed entries. Alex decides to continue using the app daily to unlock these badges. They close the app for now, planning to return tomorrow to add another entry and maintain their streak. Later in the day, Alex attends a networking event and reflects on the experience, mentally noting what they want to journal about tomorrow.
+
+COMMAND:
+END

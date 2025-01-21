@@ -1,0 +1,107 @@
+THOUGHT:  
+Alex, a tech-savvy professional, is intrigued by the app's promise of productivity and focus. They are looking for tools to streamline their work and manage their tasks more efficiently. The app's description of features like the Pomodoro timer, task management, and focus mode aligns with their needs. However, Alex is slightly confused about how to get started and what specific commands are available. They appreciate the reward system, as it adds a gamified element that could motivate them to stay consistent. For now, Alex decides to explore the app further by checking the available commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex is pleased to see a clear list of commands, which makes the app feel intuitive and user-friendly. They decide to start by adding a few tasks to test the task management feature. Since they have a busy day ahead, they want to prioritize their tasks effectively. Alex adds a high-priority task related to their work and a lower-priority personal task. They also notice the focus mode and reward system, which they plan to explore later. For now, Alex is focused on setting up their tasks and seeing how the app handles prioritization.  
+
+COMMAND:  
+add priority 1 Finish quarterly product roadmap
+
+APP OUTPUT:
+Added task: finish quarterly product roadmap (Priority: 1)
+
+THOUGHT:  
+Alex is satisfied that the app successfully added their high-priority task. They appreciate the simplicity of the command and the immediate feedback. Next, they decide to add a lower-priority personal task to see how the app handles multiple tasks with different priorities. They are curious to see how the tasks will be displayed and whether the prioritization is visually clear. Alex is also thinking about starting a focus session later to test the Pomodoro timer and earn some points.  
+
+COMMAND:  
+add priority 4 Buy groceries for the week
+
+APP OUTPUT:
+Added task: buy groceries for the week (Priority: 4)
+
+THOUGHT:  
+Alex is happy to see that the app successfully added their second task with a lower priority. They are now curious to see how the app organizes and displays these tasks. They decide to list all tasks to check if the prioritization is visually clear and if the tasks are sorted by priority. Alex is also considering whether to start a focus session immediately or explore the focus mode first. They are particularly interested in how the app blocks distractions and whether it integrates with their existing workflow.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish quarterly product roadmap (Priority: 1)
+2. [ ] buy groceries for the week (Priority: 4)
+
+THOUGHT:  
+Alex is impressed by how clearly the app displays tasks, with priorities labeled and tasks sorted by priority. They appreciate the simplicity and readability of the task list. Now, they want to test the task completion feature to see how the app handles marking tasks as done. They decide to complete the high-priority task first, as it aligns with their current focus on work. After completing the task, Alex plans to start a focus session to test the Pomodoro timer and see how the reward system works.  
+
+COMMAND:  
+complete 1
+
+APP OUTPUT:
+Marked task 1 as completed
+
+THOUGHT:  
+Alex is pleased that the app successfully marked their high-priority task as completed. They check the task list again to confirm that the completed task is updated. They are now ready to test the focus session feature, as they want to see how the Pomodoro timer works and whether it helps them stay productive. Alex is also curious about the reward system and how points are earned. They decide to start a focus session and see how the app handles interruptions or distractions during the session.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is excited to begin their focus session and appreciates that the app automatically activates focus mode to block distractions. They set their phone aside and start working on their next task, feeling motivated by the structured time frame. After about 20 minutes, Alex checks the app to see how much time is left in the session. They are curious about how the app handles interruptions and whether it provides reminders or notifications during the session. Alex is also looking forward to earning points and seeing how the reward system works.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is thrilled to see that they earned 10 points for completing the focus session. They appreciate the encouragement to take a 5-minute break, as it aligns with their goal of maintaining work-life balance. They decide to step away from their desk, grab a coffee, and stretch for a few minutes. During the break, Alex reflects on how the app helped them stay focused and is curious about how the points system will motivate them over time. They plan to start another focus session after the break to continue testing the app's features.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex begins their second focus session, feeling motivated by the points they earned earlier. They are curious to see if the app will provide any notifications or reminders during the session to keep them on track. After about 15 minutes, Alex receives a work-related notification on their phone but decides to ignore it, trusting the app's focus mode to block distractions. They continue working and are eager to see how many points they will earn after completing this session. Alex is also thinking about testing the focus mode toggle to see how it handles interruptions.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 20 (Level 1)
+Earn 80 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is pleased to see that they earned another 10 points, bringing their total to 20. They appreciate the progress toward Level 2 and feel motivated to continue using the app. During their break, Alex checks their task list and notices that the "buy groceries for the week" task is still pending. They decide to complete this task after the break to see how the app handles marking lower-priority tasks as done. Alex is also curious about how the app will display completed tasks and whether it provides any insights or summaries of their productivity.  
+
+COMMAND:  
+complete 2
+
+APP OUTPUT:
+Marked task 2 as completed

@@ -1,0 +1,82 @@
+THOUGHT:  
+Alex is intrigued by the app's concept of daily reflection and earning badges. They appreciate the mindfulness aspect and the gamification element, which aligns with their values of growth and self-improvement. They decide to start by adding a journal entry to see how the app works. They're curious about the mood feature and wonder if it will help them track their emotional patterns over time.  
+
+COMMAND:  
+journal happy Today was a great day! I finished a big project at work and celebrated with friends at a new vegan restaurant in Williamsburg. Feeling grateful for the little wins.  
+
+---  
+
+APP OUTPUT:  
+Entry added successfully!  
+Streak: 1 day  
+Mood: happy  
+You’ve earned the badge: **First Reflection**!  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+---  
+
+THOUGHT:  
+Alex is pleased with the immediate feedback from the app, especially the badge they earned for their first entry. They like the idea of tracking their streak and are motivated to maintain it. They decide to check their stats to see what other badges they can aim for.  
+
+COMMAND:  
+stats  
+
+---  
+
+APP OUTPUT:  
+**Your Stats:**  
+- Current Streak: 1 day  
+- Longest Streak: 1 day  
+- Total Entries: 1  
+
+**Badges Earned:**  
+- First Reflection  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+---  
+
+THOUGHT:  
+Alex is satisfied with the stats overview and decides to explore the available badges to set some goals. They’re curious about what other badges they can earn and what the requirements are.  
+
+COMMAND:  
+badges  
+
+---  
+
+APP OUTPUT:  
+**Available Badges:**  
+- **First Reflection**: Earned after your first journal entry.  
+- **3-Day Streak**: Earned after journaling for 3 consecutive days.  
+- **7-Day Streak**: Earned after journaling for 7 consecutive days.  
+- **Mood Tracker**: Earned after logging 5 entries with mood tags.  
+- **Reflection Master**: Earned after 30 total journal entries.  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+---  
+
+THOUGHT:  
+Alex is excited about the badges and sets a goal to earn the "Mood Tracker" badge by logging 5 entries with mood tags. They decide to close the app for now and return tomorrow to continue their streak.  
+
+COMMAND:  
+END

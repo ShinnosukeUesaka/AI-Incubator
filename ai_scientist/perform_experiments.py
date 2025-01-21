@@ -162,7 +162,7 @@ Great job! Please modify `plot.py` to generate the most relevant plots for the f
 
 In particular, be sure to fill in the "plots" dictionary with the correct names for each run that you want to plot.
 
-Only the runs in the `labels` dictionary will be plotted, so make sure to include all relevant runs.
+Make sure you have a good description for each of the run in the dictionary.
 
 We will be running the command `python plot.py` to generate the plots.
 """

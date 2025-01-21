@@ -1,0 +1,80 @@
+THOUGHT:  
+Alex, being a productivity enthusiast and tech-savvy individual, is intrigued by the app's promise of helping them stay focused. They are particularly interested in the Pomodoro timer and task management features, as these align with their need for structured work sessions and efficient task prioritization. Alex is curious about how the reward system works and whether it will motivate them to stay consistent. They are also wondering if the app integrates with other tools they use, like their calendar or project management software. For now, Alex decides to explore the app further by checking out the available commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+list - Show all tasks
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex is pleased to see a straightforward list of commands. They appreciate the simplicity and clarity of the interface, which aligns with their preference for efficient tools. Alex decides to start by adding a few tasks to test the task management feature. They want to prioritize their tasks based on urgency, so they plan to assign different priority levels. Alex is also curious about how the focus mode works and whether it can block distractions effectively. They will explore these features step by step.  
+
+COMMAND:  
+add "Finish quarterly report" priority 1
+
+APP OUTPUT:
+Added task: "finish quarterly report" priority 1 (Priority: 3)
+
+THOUGHT:  
+Alex notices that the app assigned a priority of 3 to the task, even though they specified priority 1. This is confusing, as they expected the app to respect their input. They wonder if there’s a bug in the priority system or if they misunderstood how to set priorities. Despite this, Alex decides to proceed and add another task to see if the issue persists. They are slightly concerned about the reliability of the task management feature but remain optimistic about the app’s potential.  
+
+COMMAND:  
+add "Debug API integration" priority 2
+
+APP OUTPUT:
+Added task: "debug api integration" priority 2 (Priority: 3)
+
+THOUGHT:  
+Alex is now certain that the priority system is not working as expected. Both tasks were assigned a priority of 3, regardless of the input. This is frustrating, as task prioritization is a key feature they were excited about. They decide to check the list of tasks to see if the issue is limited to the priority assignment or if there are other inconsistencies. Alex is starting to question the app’s reliability but remains curious about the other features, such as the Pomodoro timer and focus mode.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] "finish quarterly report" priority 1 (Priority: 3)
+2. [ ] "debug api integration" priority 2 (Priority: 3)
+
+THOUGHT:  
+Alex is now thoroughly confused. The app displays the tasks correctly but still shows the incorrect priority level (3) for both tasks, despite their input. They wonder if this is a display issue or if the app is overriding their priority settings. Alex decides to test the Pomodoro timer next, as they are eager to see if the core functionality of the app works well. They hope that the timer and focus mode will compensate for the task management issues.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is pleased to see that the Pomodoro timer starts smoothly and that focus mode is activated. They appreciate the immediate feedback and the assurance that distractions are blocked. This feature aligns with their need for uninterrupted work sessions. Alex decides to use this time to work on their quarterly report. They are curious about how the app will handle the end of the session and whether the reward points will be awarded as promised.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is impressed by the seamless completion of the focus session and the immediate reward of 10 points. They appreciate the motivational aspect of the reward system and the suggestion to take a break. This aligns with their interest in maintaining a healthy work-life balance. Alex decides to take a short break to stretch and grab a coffee. They plan to return to the app afterward to test the focus mode and see if it effectively blocks distractions.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode activated.
+
+THOUGHT:  
+Alex is curious to see how effective the focus mode is at blocking distractions. They decide to test it by attempting to access a distracting website or app. If the focus mode works as intended, it will significantly enhance their productivity. Alex also wonders if the app provides any customization options for focus mode, such as whitelisting certain websites or apps. They plan to explore these possibilities after testing the basic functionality.  
+
+COMMAND:  
+END

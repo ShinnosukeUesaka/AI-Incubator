@@ -1,0 +1,123 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you reflect on your day?
+Yes: 0
+Somewhat: 1
+No: 3
+
+Q: How would you rate the ease of use of the app?
+Very Easy: 0
+Easy: 0
+Neutral: 0
+Difficult: 1
+Very Difficult: 3
+
+Q: Did the streak system motivate you to journal consistently?
+Yes: 0
+Somewhat: 1
+No: 3
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: The app could benefit from clearer instructions on how to submit journal entries. It was confusing to figure out the correct way to input my reflections. Additionally, adding more details about how to earn badges and providing examples of prompts would make the experience more engaging. Finally, fixing the bug that caused my initial entries to not be saved would greatly improve usability.
+Response 2: The app needs clearer instructions and better error handling. It should provide guided prompts for journaling to make the process easier and more engaging. Additionally, the app should ensure that journal entries are saved properly and allow users to view and edit past entries. Improving the user interface and adding more detailed feedback on progress and streaks would also enhance the overall experience.
+
+Q: What did you find most helpful about the app?
+Response 1: The streak system was motivating and aligned with my goal-oriented mindset. It provided a sense of accomplishment and encouraged me to journal daily. The concept of reflecting on my day is also valuable, as it fits well with my interest in mindfulness and personal growth.
+Response 2: The concept of a daily reflection journal is helpful and aligns with my interest in mindfulness and personal development. The idea of earning badges for maintaining a streak is motivating, although the execution needs improvement. The app's potential to track progress and provide insights into personal growth is appealing, but it needs to be more user-friendly and functional to realize this potential.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:
+Alex is intrigued by the concept of a daily reflection journal, as it aligns with their interest in mindfulness and personal development. They are excited to start using the app to build a consistent journaling habit, which is one of their short-term goals. The idea of earning badges for maintaining a streak appeals to their competitive and achievement-oriented nature. However, Alex is slightly confused about how the prompts will work—will they be random, or tailored to their interests? They also wonder if the app will allow them to review past entries or track their progress over time. For now, Alex decides to start journaling and see how the app works.
+
+COMMAND:
+Start journaling.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex realizes they made a mistake by using an incorrect command. They appreciate the app's clear feedback and the suggestion of valid commands. They are now curious about what each command does. They decide to start with the 'journal' command to begin their daily reflection. Alex is still wondering if the prompts will be personalized or generic, but they are eager to dive in and see how the app guides them through the process.
+
+COMMAND:
+journal
+
+APP OUTPUT:
+Please provide your journal entry
+
+THOUGHT:
+Alex is a bit surprised that the app didn't provide a prompt or guidance for the journal entry. They expected a structured prompt to help them reflect, as mentioned in the welcome message. This lack of direction is slightly confusing, as they were hoping for a more guided experience. However, Alex decides to proceed by writing a brief reflection on their day, focusing on their mindfulness practice and work progress. They wonder if the app will save this entry and if they can revisit it later. They also hope that future journaling sessions will include prompts to make the process easier and more engaging.
+
+COMMAND:
+Today was a productive day. I meditated for 10 minutes this morning, which helped me stay focused at work. I made progress on a new feature for our app, and I feel good about the direction it's heading. I also tried a new plant-based recipe for dinner, which turned out great!
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is now frustrated. They thought they were following the correct process by entering their journal entry directly after the prompt, but the app seems to have misunderstood their input. They realize they might have missed a step or misunderstood the app's interface. They decide to try the 'journal' command again, hoping for clearer instructions this time. Alex is starting to feel that the app's user experience could be improved with better guidance and error handling. They remain hopeful but are growing slightly impatient with the lack of clarity.
+
+COMMAND:
+journal
+
+APP OUTPUT:
+Please provide your journal entry
+
+THOUGHT:
+Alex is now more cautious. They understand that the app expects them to input their journal entry after the 'journal' command. They decide to write a shorter, more concise entry this time to see if the app processes it correctly. They are still hoping for a more guided experience with prompts, but they are willing to give the app another chance. Alex is also curious about how the app will store and display their entries, and whether they can view or edit them later. They plan to explore the 'view' and 'stats' commands after this entry to see how the app tracks their progress.
+
+COMMAND:
+Meditated for 10 minutes. Worked on app feature. Cooked plant-based dinner. Feeling accomplished.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is now thoroughly confused and frustrated. They followed the app's instructions by entering their journal entry after the 'journal' command, but the app still doesn't seem to recognize their input. They suspect there might be a bug or a missing feature in the app's interface. Alex decides to try a different approach by using the 'view' command to see if their entry was saved. If not, they might close the app temporarily to take a break and return later, hoping the issue resolves itself or that they can figure out the correct process. They are starting to feel that the app's usability needs significant improvement.
+
+COMMAND:
+view
+
+APP OUTPUT:
+No entries yet
+
+THOUGHT:
+Alex is disappointed to see that their journal entries were not saved. They realize that the app might not be functioning as intended, or perhaps they are missing a critical step in the process. They decide to close the app temporarily to take a break and clear their mind. During this interval, Alex makes a cup of tea and reflects on their experience so far. They appreciate the app's concept but feel that the execution needs work, especially in terms of user guidance and error handling. They plan to reopen the app later and try again, perhaps experimenting with the 'stats' command to see if it provides any useful information.
+
+COMMAND:
+stats
+
+APP OUTPUT:
+Current streak: 0 days
+Longest streak: 0 days
+Badges earned: None
+
+THOUGHT:
+Alex is now more informed about their progress, or lack thereof, in the app. They see that their streak is at 0 days, which makes sense since their entries weren't saved earlier. They are curious about how the badges work and what milestones they need to reach to earn them. However, they are still frustrated with the app's inability to save their journal entries. Alex decides to give the app one more try, hoping that this time they can successfully save an entry. They plan to write a shorter, more concise reflection and see if the app processes it correctly. If not, they might consider ending the survey and providing feedback about the app's usability issues.
+
+COMMAND:
+journal
+
+APP OUTPUT:
+Please provide your journal entry
+
+THOUGHT:
+Alex is determined to make this work. They decide to write a very short and straightforward journal entry to minimize the chance of errors. They are still hoping for a more guided experience with prompts, but they are willing to adapt to the app's current limitations. Alex is also curious about how the app will handle this entry and whether it will finally save it. They plan to use the 'view' command immediately after to check if the entry was saved. If it works, they might continue using the app; if not, they will likely end the survey and provide feedback about the app's issues.
+
+COMMAND:
+Meditated. Worked. Cooked. Good day.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is now completely frustrated. They followed the app's instructions carefully, but it still doesn't recognize their journal entry. They feel that the app is not user-friendly and lacks clear instructions or error handling. Alex decides to end the survey, as the app seems to be unusable in its current state. They plan to provide feedback about the issues they encountered, including the lack of prompts, the inability to save entries, and the confusing error messages. Alex believes the app has potential but needs significant improvements in usability and functionality.
+
+COMMAND:
+END
+----------------------------------------

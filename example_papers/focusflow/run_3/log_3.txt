@@ -1,0 +1,99 @@
+THOUGHT:  
+Alex is intrigued by the app's promise of boosting productivity, especially since they value efficiency and innovation in their daily life. They are curious about how FocusFlow integrates Pomodoro timers, task management, and a reward system, as these features align with their interest in productivity tools. Alex is slightly confused about how the reward system works—specifically, what "leveling up" entails and whether it offers tangible benefits. They like the clean and straightforward introduction, which matches their preference for minimalist design. Alex decides to explore the app further by checking out the available commands.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+list - Show all tasks
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex appreciates the simplicity of the commands and the app's straightforward interface. They are eager to test the task management feature first, as they often juggle multiple projects at work and need a reliable way to prioritize tasks. Alex decides to add a few tasks to see how the app handles prioritization and organization. They are curious about how the app will display tasks and whether it will allow them to assign priorities directly.  
+
+COMMAND:  
+add Finish project proposal priority 1
+
+APP OUTPUT:
+Added task: finish project proposal priority 1 (Priority: 3)
+
+THOUGHT:  
+Alex notices that the app assigned a priority of 3 to the task, even though they specified priority 1. This is confusing, as they expected the app to respect their input. They wonder if there’s a bug or if they misunderstood how to set priorities. Despite this, Alex appreciates that the task was added successfully and decides to try adding another task to see if the priority issue persists. They also make a mental note to check the help command later to clarify how priorities work.  
+
+COMMAND:  
+add Debug API endpoint priority 2
+
+APP OUTPUT:
+Added task: debug api endpoint priority 2 (Priority: 3)
+
+THOUGHT:  
+Alex is now certain that the app is not respecting the priority levels they input, as both tasks were assigned a priority of 3 regardless of their specified values. This is frustrating, as task prioritization is a key feature they were excited about. They decide to list the tasks to see how they are displayed and whether the priority issue affects the task organization. Alex is still hopeful that the app might have other useful features, such as the Pomodoro timer or focus mode, but this bug is a significant drawback.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish project proposal priority 1 (Priority: 3)
+2. [ ] debug api endpoint priority 2 (Priority: 3)
+
+THOUGHT:  
+Alex reviews the list of tasks and confirms that both tasks have been assigned a priority of 3, which is inconsistent with their input. They are disappointed by this bug, as it undermines the app's usefulness for managing tasks effectively. However, they decide to test the Pomodoro timer feature next, as it might still be valuable for their workflow. Alex is curious about how the timer integrates with the task list and whether it will help them stay focused. They also wonder if the reward system will track their progress during the focus session.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is pleased that the focus session started smoothly and that the app automatically activated focus mode to block distractions. They appreciate the simplicity of the process and the immediate feedback. Alex sets their phone aside and begins working on the "finish project proposal" task, feeling motivated by the structured time frame. They wonder if the app will notify them when the session ends and whether they will earn points for completing it. After about 20 minutes, Alex takes a short break to stretch and grab a glass of water, then returns to their desk to finish the session.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 5 minute break.
+
+THOUGHT:  
+Alex is satisfied with the focus session and likes the immediate feedback about earning points and leveling up. They find the reward system motivating and appreciate the suggestion to take a break, as it aligns with their focus on work-life balance. However, they are still bothered by the priority bug in the task management feature. Alex decides to test the focus mode to see if it effectively blocks distractions, as this could be a redeeming feature of the app. They also wonder if the app tracks their progress over multiple sessions or if the points reset after closing the app.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode activated.
+
+THOUGHT:  
+Alex is curious about how the focus mode works and whether it truly blocks distractions. They open a few apps on their phone to test if notifications are blocked, but they notice that some notifications still come through. This is disappointing, as they expected the focus mode to be more robust. Alex decides to deactivate focus mode and check their points to see if the app tracks their progress accurately. They are still hopeful that the app might improve with updates, but the current issues with task priorities and focus mode are significant drawbacks.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode deactivated.
+
+THOUGHT:  
+Alex is now ready to check their points to see if the app accurately tracks their progress. They are curious about how the leveling system works and whether it offers any tangible benefits, such as unlocking new features or customization options. Alex also considers whether the app might be more useful for short-term focus sessions rather than long-term task management, given the issues they've encountered. They decide to check their points and then explore the app further to see if there are any hidden features or settings that could improve their experience.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 10 points (Level 1).
+Earn 90 more points to reach Level 2!
+
+THOUGHT:  
+Alex is pleased that the app accurately tracks their points and provides clear feedback about their progress toward the next level. They find the leveling system motivating and wonder what rewards or features might be unlocked at higher levels. However, they are still frustrated by the priority bug in the task management feature and the inconsistent performance of focus mode. Alex decides to end their testing session for now, as they feel they have explored the app's core features and identified its strengths and weaknesses. They plan to revisit the app later if updates address the issues they encountered.  
+
+COMMAND:  
+END

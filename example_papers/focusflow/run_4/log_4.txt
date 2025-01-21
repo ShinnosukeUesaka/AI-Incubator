@@ -1,0 +1,105 @@
+THOUGHT:
+Alex is intrigued by the app's promise of boosting productivity, especially since they are always on the lookout for tools to optimize their workflow. They notice the app offers a Pomodoro timer, task management with priorities, a focus mode to block distractions, and a reward system. Alex appreciates the gamification aspect with the reward system, as it aligns with their love for tech and innovation. They are curious about how the task management system works and how the focus mode blocks distractions. Alex decides to explore the task management feature first, as they have a busy day ahead with multiple projects to juggle.
+
+COMMAND:
+task add "Finish API integration" priority 1
+
+APP OUTPUT:
+Unknown command. Type 'help' for options.
+
+THOUGHT:  
+Alex is slightly confused by the error message. They expected the command to work based on the app's description of task management with priorities. They wonder if they missed a specific syntax or if the app requires a different command structure. Alex decides to check the available commands to understand how to proceed. They appreciate the app's simplicity but feel a bit frustrated by the lack of immediate clarity.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex feels relieved after seeing the list of commands. They realize they misunderstood the syntax for adding a task with a priority. Now that they know the correct format, they are eager to add their first task: "Finish API integration" with the highest priority. They appreciate the app's straightforward command structure and are curious to see how the task list will look once populated. Alex is also interested in testing the focus mode later, as they often struggle with distractions while coding.  
+
+COMMAND:  
+add priority 1 Finish API integration
+
+APP OUTPUT:
+Added task: finish api integration (Priority: 1)
+
+THOUGHT:  
+Alex is pleased that the task was successfully added with the correct priority. They feel confident about using the app now and decide to add a few more tasks to their list to simulate a real workday. They want to test how the app handles multiple tasks with different priorities. Alex also notes that the app automatically converts the task name to lowercase, which they find slightly odd but not a dealbreaker. They wonder if the app will allow them to edit tasks later or if they’ll need to delete and re-add them.  
+
+COMMAND:  
+add priority 3 Write unit tests for new feature
+
+APP OUTPUT:
+Added task: write unit tests for new feature (Priority: 3)
+
+THOUGHT:  
+Alex is satisfied that the second task was added successfully. They appreciate how quickly the app processes commands and displays feedback. They decide to add one more task to their list, this time with a lower priority, to see how the app organizes tasks with varying levels of importance. Alex is curious about how the task list will look when displayed and whether the app will sort tasks by priority automatically. They also start thinking about testing the Pomodoro timer and focus mode after setting up their tasks.  
+
+COMMAND:  
+add priority 5 Update project documentation
+
+APP OUTPUT:
+Added task: update project documentation (Priority: 5)
+
+THOUGHT:  
+Alex is happy that all three tasks have been added successfully. They are now eager to see how the app organizes and displays the tasks. They wonder if the app will sort tasks by priority or if they will appear in the order they were added. Alex also considers testing the "list" command to view their tasks and ensure everything is in order. They are curious about how the app will handle marking tasks as completed and whether it will provide any visual feedback or rewards for completing tasks.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] finish api integration (Priority: 1)
+2. [ ] write unit tests for new feature (Priority: 3)
+3. [ ] update project documentation (Priority: 5)
+
+THOUGHT:  
+Alex is impressed by how the app organizes tasks by priority, making it easy to see which tasks require immediate attention. They appreciate the clear visual distinction between priorities and the simplicity of the task list. However, they notice that the tasks are not sorted by priority, which feels counterintuitive. They expected the highest-priority task to appear at the top. Alex decides to test the "complete" command next, starting with the highest-priority task, to see how the app handles task completion and whether it updates the list dynamically.  
+
+COMMAND:  
+complete 1
+
+APP OUTPUT:
+Marked task 1 as completed
+
+THOUGHT:  
+Alex is pleased that the app successfully marked the task as completed. They wonder if the task list will update automatically to reflect the change or if they need to run the "list" command again to see the updated list. They also notice that the app didn't provide any immediate feedback about earning points or leveling up, which they expected based on the reward system mentioned earlier. Alex decides to check the task list again to see if the completed task is still visible or if it has been removed.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [x] finish api integration (Priority: 1)
+2. [ ] write unit tests for new feature (Priority: 3)
+3. [ ] update project documentation (Priority: 5)
+
+THOUGHT:  
+Alex observes that the completed task is still visible in the list but is marked with an "x" to indicate completion. They appreciate the visual clarity but wonder if there's a way to hide completed tasks to declutter the list. They also notice that the app still hasn't mentioned anything about earning points for completing the task, which feels inconsistent with the reward system described earlier. Alex decides to test the "points" command to see if they earned any points for completing the task.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 0 points (Level 1).
+Earn 100 more points to reach Level 2!
+
+THOUGHT:  
+Alex is confused and slightly disappointed that they didn't earn any points for completing the task. They recall that the app mentioned earning 10 points per focus session, not per task completion. This makes them realize they need to test the Pomodoro timer and focus mode to understand how the reward system works. They decide to start a focus session next to see if they can earn points and test the app's core functionality.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.

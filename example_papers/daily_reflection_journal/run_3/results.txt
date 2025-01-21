@@ -1,0 +1,79 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you reflect on your day?
+Yes: 4
+Somewhat: 0
+No: 0
+
+Q: How would you rate the ease of use of the app?
+Very Easy: 4
+Easy: 0
+Neutral: 0
+Difficult: 0
+Very Difficult: 0
+
+Q: Did the streak system motivate you to journal consistently?
+Yes: 4
+Somewhat: 0
+No: 0
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: I think the app could benefit from more detailed mood options, like "excited," "calm," or "frustrated," to better capture the nuances of daily emotions. Additionally, it would be great to have a feature that provides insights or trends based on mood entries over time, like a weekly or monthly summary. Lastly, integrating reminders or prompts at a customizable time of day could help maintain consistency, especially for busy professionals like me.
+Response 2: I would suggest adding more nuanced mood options beyond just happy, sad, and neutral. For example, options like "grateful," "stressed," or "excited" could help capture a wider range of emotions. Additionally, it would be great to have more personalized prompts or the ability to customize prompts based on specific goals, like mindfulness or productivity. Finally, integrating with other apps like Notion or Google Calendar could make it easier to incorporate journaling into my existing routines.
+
+Q: What did you find most helpful about the app?
+Response 1: I found the streak system and badges most helpful. They added a fun, gamified element that motivated me to journal consistently. The mood tagging feature was also a nice touch, as it encouraged me to reflect on my emotional state alongside my daily experiences. The simplicity of the interface made it easy to use, which is important for someone like me who values efficiency and mindfulness.
+Response 2: I found the streak system and badges most helpful because they gamified the journaling experience and motivated me to stay consistent. The simplicity of adding entries with a mood tag was also great—it made reflecting on my day quick and easy, even on busy days. The app's clean and straightforward interface made it easy to focus on the content of my reflections without distractions.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:
+Alex Carter, being a software engineer with a keen interest in personal development and mindfulness, is intrigued by the concept of a daily reflection journal. They appreciate the idea of maintaining a streak and earning badges, as it aligns with their goal of building a consistent morning routine and deepening their mindfulness practice. Alex is curious about the types of prompts they might receive and how the app will help them reflect on their day. They are also interested in seeing how the app tracks their progress and what kind of badges they can earn. Alex decides to start by adding a journal entry to see how the app works.
+
+COMMAND:
+journal happy Today was a productive day at work. I managed to solve a complex bug and received positive feedback from my team. Feeling accomplished!
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:
+Alex is pleased to see that their journal entry was successfully saved and that they have started a streak. They feel motivated to maintain this streak, as it aligns with their goal of building a consistent routine. Alex is curious about how the app tracks their mood and progress over time. They decide to explore the stats feature to see more details about their streak and any potential insights the app might provide. Alex also wonders if there are any badges they can aim for, so they might check that later.
+
+COMMAND:
+stats
+
+APP OUTPUT:
+Your Progress:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+Mood Statistics:
+Happy days: 1
+
+THOUGHT:
+Alex is satisfied to see their progress displayed clearly, especially the current streak and mood statistics. They note that they have a long way to go to earn badges, which motivates them to continue journaling daily. Alex appreciates the simplicity of the stats page and how it provides a quick overview of their emotional state over time. They decide to explore the badges feature to understand what they need to achieve to earn rewards. Alex is also curious about the types of prompts they might receive in the future, but for now, they focus on learning more about the badges.
+
+COMMAND:
+badges
+
+APP OUTPUT:
+Available Badges:
+3-day Streak: Journal for 3 consecutive days
+7-day Streak: Journal for 7 consecutive days
+14-day Streak: Journal for 14 consecutive days
+30-day Streak: Journal for 30 consecutive days
+Mood Master: Track mood for 7 days
+Reflection Pro: Write 10 detailed entries
+
+THOUGHT:
+Alex is excited about the badges and sees them as a fun way to stay motivated. They particularly like the "Mood Master" and "Reflection Pro" badges, as they align with their interest in mindfulness and personal growth. Alex decides to set a goal to earn the "3-day Streak" badge first and then work their way up. They close the app for now, planning to return tomorrow to continue their streak. In the meantime, Alex spends the rest of their evening practicing yoga and reflecting on their day, feeling optimistic about using the app as part of their daily routine.
+
+COMMAND:
+END
+----------------------------------------

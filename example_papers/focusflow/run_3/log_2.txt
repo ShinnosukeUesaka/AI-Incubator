@@ -1,0 +1,103 @@
+THOUGHT:  
+Alex, being a productivity enthusiast, is intrigued by the app's promise to help stay focused and manage tasks efficiently. They are particularly interested in the Pomodoro timer and task management features, as these align with their need for structured work sessions. The reward system also catches their attention, as it adds a gamified element that could make productivity more engaging. However, Alex is slightly confused about how to get started and what specific commands are available. They decide to explore the app further by typing 'help' to understand the available commands and features better.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+list - Show all tasks
+start - Begin focus session
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+THOUGHT:  
+Alex appreciates the simplicity of the commands and is ready to dive into using the app. They decide to start by adding a few tasks to their list, as they have a busy day ahead with coding, attending a team meeting, and working on a side project. They like how straightforward the commands are, but they wonder if there’s a way to set priorities for tasks directly while adding them. For now, they proceed to add tasks one by one.  
+
+COMMAND:  
+add "Refactor backend code for project X"
+
+APP OUTPUT:
+Added task: "refactor backend code for project x" (Priority: 3)
+
+THOUGHT:  
+Alex notices that the task was added with a default priority of 3. They are slightly confused about how to set a custom priority while adding a task, as they would like to assign higher priority to some tasks. They decide to add another task and see if there’s a way to specify the priority. They also wonder if the app supports subtasks or due dates, which would be useful for their workflow.  
+
+COMMAND:  
+add "Prepare presentation for team meeting"
+
+APP OUTPUT:
+Added task: "prepare presentation for team meeting" (Priority: 3)
+
+THOUGHT:  
+Alex is a bit frustrated that the app doesn’t seem to allow setting custom priorities while adding tasks. They decide to check if there’s a way to edit task priorities later. For now, they proceed to list all their tasks to see what’s been added so far. They also consider starting a focus session to test the Pomodoro timer, but they want to ensure their task list is complete first.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] "refactor backend code for project x" (Priority: 3)
+2. [ ] "prepare presentation for team meeting" (Priority: 3)
+
+THOUGHT:  
+Alex reviews the task list and realizes that both tasks have the same default priority, which isn’t ideal for their workflow. They are curious if there’s a way to reorder or edit tasks, such as changing priorities or marking tasks as completed. They also wonder if the app supports recurring tasks, which would be helpful for daily stand-ups or weekly reviews. For now, they decide to test the focus session feature to see how well it works in practice.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex is pleased that the focus session has started and that distractions are blocked. They appreciate the simplicity of the Pomodoro timer and the focus mode feature, which aligns with their need for deep work sessions. They set their phone aside and begin working on refactoring the backend code for project X. After 25 minutes, the timer ends, and Alex takes a short break to stretch and grab a glass of water. They feel productive and decide to check their progress in the app.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 0 points (Level 1).
+Earn 100 more points to reach Level 2!
+
+THOUGHT:  
+Alex is slightly confused because they expected to earn 10 points for completing the focus session. They wonder if the points are only awarded after completing a task or if there’s a delay in updating the points. They decide to check the task list again to see if the focus session contributed to any progress. They also consider starting another focus session to test if points are awarded after multiple sessions.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] "refactor backend code for project x" (Priority: 3)
+2. [ ] "prepare presentation for team meeting" (Priority: 3)
+
+THOUGHT:  
+Alex notices that the task list hasn’t changed, and neither task has been marked as completed. They are unsure if the focus session is tied to task completion or if it’s a separate feature. They decide to test the app further by starting another focus session and seeing if points are awarded afterward. They also wonder if there’s a way to mark tasks as completed manually.  
+
+COMMAND:  
+start
+
+APP OUTPUT:
+Starting focus session for 25 minutes...
+Focus mode activated. Distractions blocked.
+
+THOUGHT:  
+Alex begins another focus session, this time working on preparing the presentation for the team meeting. They appreciate the focus mode blocking distractions, which helps them stay productive. After 25 minutes, the timer ends, and Alex takes another short break. They feel accomplished and decide to check their points again to see if they’ve earned any rewards.  
+
+COMMAND:  
+points
+
+APP OUTPUT:
+You have 0 points (Level 1).
+Earn 100 more points to reach Level 2!
+
+THOUGHT:  
+Alex is now quite confused and slightly frustrated. They’ve completed two focus sessions but still have 0 points. They wonder if there’s a bug in the app or if they’re misunderstanding how the reward system works. They decide to explore the app further by toggling focus mode off and checking if that triggers any updates. They also consider ending the survey if the app continues to behave unexpectedly.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode deactivated.

@@ -1,0 +1,122 @@
+# Survey Results:
+
+Multiple Choice Questions:
+
+Q: Did the app help you reflect on your day?
+Yes: 3
+Somewhat: 1
+No: 0
+
+Q: How would you rate the ease of use of the app?
+Very Easy: 3
+Easy: 1
+Neutral: 0
+Difficult: 0
+Very Difficult: 0
+
+Q: Did the streak system motivate you to journal consistently?
+Yes: 4
+Somewhat: 0
+No: 0
+
+Open Ended Responses (Sample):
+
+Q: What improvements would you suggest for the app?
+Response 1: The app is great, but it could benefit from a few enhancements:  
+1. **Customizable Prompts**: While the daily reflection is helpful, having the option to choose or customize prompts based on specific themes (e.g., gratitude, productivity, relationships) would make the experience more personalized.  
+2. **Mood Tracking Visualization**: A visual graph or chart to track mood trends over time would provide deeper insights into emotional patterns.  
+3. **Reminders and Notifications**: Gentle reminders to journal at a preferred time of day would help maintain consistency, especially on busy days.  
+4. **Community Features**: A way to share reflections (anonymously, if desired) or connect with like-minded users for inspiration and support could add a social dimension.  
+5. **Integration with Other Apps**: Syncing with calendar apps or wearable devices to incorporate daily activities or health data into reflections could make the journaling experience more holistic.  
+
+Overall, the app is intuitive and effective, but these additions could make it even more engaging and impactful.
+Response 2: The app is great, but it could benefit from a few additional features:  
+1. **Customizable Prompts:** While the daily reflection is helpful, having the option to choose or customize prompts based on specific goals (e.g., career, relationships, mindfulness) would make the experience more personalized.  
+2. **Reminders:** A gentle reminder feature to journal at a preferred time of day would help maintain consistency, especially on busy days.  
+3. **Analytics:** More detailed insights, such as mood trends over time or word count analysis, could provide deeper self-reflection opportunities.  
+4. **Social Sharing:** An optional feature to share achievements (like badges) with friends or on social media could add a fun, community-driven element.  
+5. **Offline Mode:** The ability to journal offline and sync later would be useful for users who travel or have limited connectivity.  
+
+Overall, the app is intuitive and aligns well with my goals, but these additions could enhance the experience further.
+
+Q: What did you find most helpful about the app?
+Response 1: The most helpful aspect of the app was the streak system and the badges. They provided a sense of accomplishment and motivation to journal consistently. Additionally, the simplicity of adding entries with mood tags made it easy to reflect on my day and track my emotional state over time. The clear interface and straightforward commands also made the experience enjoyable and stress-free.
+Response 2: The most helpful aspect of the app was the streak system and badges. They provided a sense of accomplishment and motivation to journal consistently. Additionally, the simplicity of adding entries with mood tags made it easy to reflect on my emotional state, which aligns with my mindfulness practices. The immediate feedback, like unlocking the "First Entry" badge, also made the experience rewarding and encouraged me to continue using the app.
+
+# Interaction Logs (Sample):
+
+Log 1:
+THOUGHT:  
+Alex, being a mindfulness enthusiast and someone who values personal growth, is intrigued by the app's focus on daily reflection and earning badges. They appreciate the simplicity of the interface and the clear instructions provided. Alex is excited to start journaling and is curious about how the app will help them maintain a streak and earn badges. They decide to start by adding their first journal entry, reflecting on their day and noting their mood.  
+
+COMMAND:  
+journal happy Today was a productive day! I finished a big project at work and treated myself to a delicious plant-based dinner. Feeling accomplished and grateful.  
+
+---  
+
+APP OUTPUT:  
+Journal entry added!  
+Streak: 1 day  
+Mood: happy  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex feels a sense of accomplishment after adding their first journal entry. They like how the app immediately acknowledges their entry and updates their streak. They are curious about their stats and want to see if they’ve earned any badges yet. Alex decides to check their stats to see their progress and explore the available badges.  
+
+COMMAND:  
+stats  
+
+---  
+
+APP OUTPUT:  
+Your Stats:  
+- Current Streak: 1 day  
+- Longest Streak: 1 day  
+- Total Entries: 1  
+- Badges Earned: Newbie (First journal entry)  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is pleased to see their stats and the "Newbie" badge they’ve earned. They feel motivated to continue journaling to maintain their streak and unlock more badges. They are curious about what other badges are available and decide to explore the list of badges and their requirements.  
+
+COMMAND:  
+badges  
+
+---  
+
+APP OUTPUT:  
+Available Badges:  
+- Newbie: Earned after your first journal entry.  
+- Streak Starter: Earned after a 3-day streak.  
+- Weekly Reflector: Earned after 7 journal entries in a week.  
+- Mood Master: Earned after logging 10 entries with mood tags.  
+- Mindful Legend: Earned after a 30-day streak.  
+
+Available commands:  
+  journal <your entry> - Add a journal entry  
+  journal <mood> <your entry> - Add entry with mood (happy/sad/neutral)  
+  view - View all journal entries  
+  stats - View your streaks and badges  
+  badges - View available badges and requirements  
+  help - Show this help message  
+
+THOUGHT:  
+Alex is excited about the variety of badges available and feels motivated to work toward earning them. They particularly like the "Mood Master" and "Mindful Legend" badges, as they align with their interest in mindfulness and emotional awareness. Alex decides to close the app for now, planning to return tomorrow to continue their streak.  
+
+COMMAND:  
+END
+----------------------------------------

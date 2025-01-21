@@ -1,0 +1,79 @@
+THOUGHT:
+Alex is intrigued by the concept of a daily reflection journal. As someone who values mindfulness and personal growth, they see this as a potential tool to enhance their daily routine. They are curious about the prompts and how they might help in self-reflection. Alex is also motivated by the idea of earning badges, as it aligns with their tech-savvy and goal-oriented nature. They are ready to start journaling and see what the first prompt is.
+
+COMMAND:
+Start journaling.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is slightly confused by the error message but quickly realizes they need to use specific commands to interact with the app. They appreciate the simplicity of the options provided—'journal', 'view', or 'stats'. Alex decides to start by using the 'journal' command to begin their daily reflection. They are eager to see what kind of prompt the app provides and how it might help them reflect on their day.
+
+COMMAND:
+journal
+
+APP OUTPUT:
+Please provide your journal entry
+
+THOUGHT:
+Alex is now prompted to provide their journal entry. They take a moment to reflect on their day, thinking about the key moments that stood out—perhaps a productive morning at work, a challenging coding problem they solved, or a relaxing yoga session in the evening. Alex appreciates the open-ended nature of the prompt, as it allows them to express themselves freely. They decide to write a thoughtful entry about their day, focusing on both achievements and areas for improvement.
+
+COMMAND:
+Today was a productive day at work. I solved a complex coding problem that had been bugging me for days, which felt incredibly satisfying. After work, I attended a yoga class, which helped me unwind and clear my mind. I also spent some time reading a book on emotional intelligence, which gave me new insights into managing stress. Overall, it was a balanced day, but I want to work on being more present during meetings.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is confused again. They thought they were supposed to provide their journal entry directly after the prompt, but the app seems to have reset or misunderstood their input. They wonder if there’s a specific format or command they need to use to submit their entry. Alex decides to try the 'journal' command again, hoping to clarify how to properly submit their reflection.
+
+COMMAND:
+journal
+
+APP OUTPUT:
+Please provide your journal entry
+
+THOUGHT:
+Alex realizes that the app is expecting them to type their journal entry directly after the prompt. They decide to try again, this time being more concise and ensuring they follow the app's instructions carefully. They reflect on their day once more and type a shorter entry to test if the app will accept it this time. Alex is slightly frustrated by the confusion but remains patient, as they understand this is an MVP and may have some usability issues.
+
+COMMAND:
+Today was productive. Solved a coding problem, attended yoga, and read about emotional intelligence. Need to focus more during meetings.
+
+APP OUTPUT:
+Unknown command. Try 'journal', 'view', or 'stats'
+
+THOUGHT:
+Alex is now quite frustrated. They’ve tried twice to submit their journal entry, but the app keeps resetting and asking for a command instead of accepting their input. They wonder if the app is broken or if they’re missing a critical step in the process. Alex decides to try a different approach by using the 'view' command to see if they can access any previous entries or instructions that might clarify how to use the app properly.
+
+COMMAND:
+view
+
+APP OUTPUT:
+No entries yet
+
+THOUGHT:
+Alex is disappointed to see that their previous attempts to journal were not saved. They realize the app might not be functioning as intended, or perhaps there’s a bug preventing entries from being recorded. They decide to give it one more try, this time typing their journal entry immediately after the 'journal' command without waiting for further prompts. If this doesn’t work, they’ll consider the app unusable for now.
+
+COMMAND:
+journal Today was productive. Solved a coding problem, attended yoga, and read about emotional intelligence. Need to focus more during meetings.
+
+APP OUTPUT:
+Journal entry saved! Current streak: 1 days
+
+THOUGHT:
+Alex is relieved that their journal entry was finally saved. They appreciate the confirmation message and the streak counter, which aligns with their goal-oriented mindset. However, they are still a bit frustrated by the earlier confusion and the lack of clear instructions on how to properly submit entries. Alex decides to explore the 'stats' command to see if there’s any additional information about their progress or achievements.
+
+COMMAND:
+stats
+
+APP OUTPUT:
+Current streak: 1 days
+Longest streak: 1 days
+Badges earned: None
+
+THOUGHT:
+Alex is pleased to see their stats, especially the streak counter, which motivates them to continue using the app daily. They are curious about the badges and what it takes to earn them, but the app doesn’t provide details yet. Alex decides to close the app for now and return tomorrow to maintain their streak. They make a mental note to check if the app improves over time or if additional features are added.
+
+COMMAND:
+END

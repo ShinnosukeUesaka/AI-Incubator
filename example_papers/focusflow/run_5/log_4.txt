@@ -1,0 +1,115 @@
+THOUGHT:  
+Alex is intrigued by the app's promise of boosting productivity, especially since they’re always looking for ways to optimize their workflow. They’re curious about the Pomodoro timer and task management features, as these align with their need for structured work sessions. The reward system also catches their eye—it seems like a fun way to gamify productivity. However, Alex is a bit unsure about how to get started beyond the initial welcome message. They’re wondering if there’s a tutorial or a more detailed guide to explore the features.  
+
+COMMAND:  
+help
+
+APP OUTPUT:
+Available commands:
+add <task> - Add a new task
+add priority <n> <task> - Add task with priority (1-5)
+list - Show all tasks
+complete <n> - Mark task n as completed
+start [minutes] - Begin focus session (default: 25, or specify duration)
+stop - End focus session
+points - Show earned points
+focus - Toggle focus mode
+
+Tip: Use 'start 50' for a 50-minute focus session
+
+THOUGHT:  
+Alex appreciates the clear list of commands and is excited to dive in. They decide to start by adding a few tasks to test the task management system. Since they’re working on a new AI project, they want to prioritize their tasks accordingly. They’re curious about how the priority levels work and whether the app will sort tasks automatically. Alex also notices the tip about customizing focus session durations, which they find useful since they sometimes prefer longer work blocks. They’re ready to start experimenting with the app’s features.  
+
+COMMAND:  
+add priority 1 "Finish AI model prototype"
+
+APP OUTPUT:
+Added task: "finish ai model prototype" (Priority: 1)
+
+THOUGHT:  
+Alex is pleased that the task was added successfully and that the priority level is clearly displayed. They decide to add a few more tasks to simulate a real workload. They’re curious to see how the app handles multiple tasks and whether it will display them in order of priority. Alex also wonders if they can edit tasks later or if they’ll need to delete and re-add them. They’re eager to see how the task list looks once populated.  
+
+COMMAND:  
+add priority 3 "Write unit tests for backend"
+
+APP OUTPUT:
+Added task: "write unit tests for backend" (Priority: 3)
+
+THOUGHT:  
+Alex is satisfied that the second task was added without issues. They decide to add one more task to round out their list. They’re curious to see how the app handles tasks with lower priorities and whether it will group or sort them in a meaningful way. Alex is also thinking ahead to the focus session feature and how it might integrate with their task list. They’re eager to see the full list of tasks before starting a focus session.  
+
+COMMAND:  
+add priority 5 "Update project documentation"
+
+APP OUTPUT:
+Added task: "update project documentation" (Priority: 5)
+
+THOUGHT:  
+Alex is happy that all three tasks have been added successfully. They’re now curious to see how the app organizes and displays the tasks, especially with different priority levels. They’re also wondering if the app will allow them to reorder tasks or if the priority levels are fixed. Alex decides to view the task list to get a better sense of how the app handles prioritization. They’re also thinking about starting a focus session soon to test the Pomodoro timer and see how it integrates with their tasks.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [ ] "finish ai model prototype" (Priority: 1)
+2. [ ] "write unit tests for backend" (Priority: 3)
+3. [ ] "update project documentation" (Priority: 5)
+
+THOUGHT:  
+Alex is impressed by how the app clearly lists the tasks in order of priority. They appreciate the visual distinction between the priority levels, which makes it easy to identify the most important tasks. However, they’re curious if the app allows for reordering tasks within the same priority level or if it’s strictly based on the order of addition. Alex also notices that the tasks are marked as incomplete, which is helpful for tracking progress. They’re now ready to test the focus session feature to see how it integrates with their task list.  
+
+COMMAND:  
+start 50
+
+APP OUTPUT:
+Starting focus session for 50 minutes...
+Focus mode activated. Distractions blocked.
+Break time: 10 minutes
+
+THOUGHT:  
+Alex is excited to begin the focus session and appreciates the clear notification about the session duration and break time. They’re curious about how the app blocks distractions and whether it integrates with their phone or computer settings. Alex also wonders if the app will provide reminders or updates during the session, such as progress notifications or motivational messages. They’re eager to see how the reward system works and whether they’ll earn points after completing the session. For now, Alex decides to focus on their highest-priority task, "Finish AI model prototype," and see how the app supports their workflow.  
+
+COMMAND:  
+stop
+
+APP OUTPUT:
+Focus session completed! You earned 10 points.
+Total points: 10 (Level 1)
+Earn 90 more points to reach Level 2!
+Take a 10 minute break.
+
+Productivity Insights:
+- Total focus time: 50 minutes
+- Average session length: 50.0 minutes
+- Total sessions completed: 1
+
+THOUGHT:  
+Alex is pleased with the feedback from the app after completing the focus session. They like the clear breakdown of their productivity stats and the encouragement to take a break. The reward system is motivating, and they’re already thinking about how to reach the next level. However, they’re curious if the app provides more detailed insights over time, such as trends in focus time or task completion rates. Alex also wonders if the app will remind them to start another session after their break. For now, they decide to mark one of their tasks as completed to see how the app handles task progress.  
+
+COMMAND:  
+complete 1
+
+APP OUTPUT:
+Marked task 1 as completed
+
+THOUGHT:  
+Alex is satisfied that the task was marked as completed without any issues. They’re curious to see how the app updates the task list and whether it will provide any additional feedback, such as a summary of completed tasks or progress toward their goals. Alex also wonders if the app will adjust their productivity insights based on completed tasks. They decide to check the task list again to see how it looks after completing the first task.  
+
+COMMAND:  
+list
+
+APP OUTPUT:
+Your tasks (1=highest priority, 5=lowest):
+1. [x] "finish ai model prototype" (Priority: 1)
+2. [ ] "write unit tests for backend" (Priority: 3)
+3. [ ] "update project documentation" (Priority: 5)
+
+THOUGHT:  
+Alex is pleased to see that the completed task is clearly marked with an "x" and remains in the list. They appreciate that the app retains completed tasks, as this allows them to track their progress over time. However, they’re curious if there’s a way to archive or hide completed tasks to declutter the list. Alex also wonders if the app provides any analytics on completed tasks, such as time spent or priority distribution. They’re now ready to test the focus mode feature to see how it blocks distractions and enhances their productivity.  
+
+COMMAND:  
+focus
+
+APP OUTPUT:
+Focus mode activated.
